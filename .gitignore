@@ -1,0 +1,9 @@
+*
+!.gitignore
+!src
+!img
+!public
+!index.html
+!package.json
+!package-lock.json
+!tsconfig.json
