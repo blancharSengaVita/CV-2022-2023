@@ -1,5 +1,9 @@
-<!-- microdata schema.org -->
-<!-- Doit-on mettre des arias roles ? non si j'ai bien ecris mon html -->
+<!-- Demander aux profs
+il faut pas mettre des classes partout, si ?
+
+-->
+
+
 <!-- Règle n° 113 quand j'aurais mis les SVG -->
 <!-- pas oublier src-set, micro-data, sémantique, optmiser les images avec npm coté serveur) -->
 <!-- Règle n° 121 - Les animations, sons et clignotements peuvent être mis en pause. -->
@@ -36,11 +40,23 @@
 		<li><a class="skip-link" href="#menu" tabindex="1">Aller au menu</a></li>
 		<li><a class="skip-link" href="#global" tabindex="2">Aller au contenu</a></li>
 	</ul> <!-- /evitement -->
-	<nav class="[ flex-space-between ]" id="menu">
+	<nav class="[ flex-space-between  flex-al-center ]" id="menu">
 		<h1 class="[ mono-text text-base ]">
-			<a href="#" title="aller vers la page d'accueil"> Blanchar Senga-Vita </a>
+			<a class=" [ text-logo ]" href="#" title="aller vers la page d'accueil">
+				<span>
+					Blanchar
+				</span>
+				<span>
+					Senga-Vita.
+				</span> </a>
 		</h1>
-		<a class="[ medium-text-base ]" href="#"> menu </a>
+		
+		<div>
+			<svg class="svg-menu" viewBox="65.2 14.9 231 99">
+				<path d="M225.7,92c0,0-169,49.6-157.8-9.1S283.1-2.9,293,35.1c9.9,37.9-66.8,76.1-66.8,76.1"></path>
+			</svg>
+			<a class=" absolute [ medium-text-base ]" href="#"> menu </a>
+		</div>
 	</nav>
 </header>
 
@@ -70,12 +86,58 @@
 				s’aura trouver des solutions aux problèmes que vous rencontrez, aussi bien, dans vos designs que dans le
 				développement de votre site web.
 			</p>
+			
+			<div class="animation">
+				
+				<svg class="petit" viewBox="0 0 272.13 267.46" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<clipPath clipPathUnits="userSpaceOnUse" id="zhtClip">
+							<rect class="zht-cl" height="247.5" width="300" x="0" y="0"></rect>
+						</clipPath>
+						<clipPath clipPathUnits="userSpaceOnUse" id="zhtClipBig">
+							<rect class="zht-cl" height="800" width="300" x="0" y="0"></rect>
+						</clipPath>
+					</defs>
+					<ellipse class="zht-hole style_fillBlack__IIEI6" cx="136.06" cy="247.05" rx="136" ry="20"></ellipse>
+					<ellipse class="zht-hole-b style_fillBlack__IIEI6" cx="136.06" cy="790.06" rx="136" ry="20"></ellipse>
+					<g class="zht-bodylg" clip-path="url(#zhtClipBig)">
+						<g class="zht-bodyg" clip-path="url(#zhtClip)" data-svg-origin="139.160005569458 122.8221206665039">
+							<g class="zht-body undefined" data-svg-origin="29.530000686645508 0.5042343139648438">
+								<g class="zht-f" transform="">
+									<path class="zht-flt style_defStyle__3MGYX" d="M117.65,193.4c3.41,21,.53,18.26-1.43,22.3a10.15,10.15,0,0,0-1.09,3.57" data-svg-origin="117.18022155761719 206.33499908447266" ></path>
+									<path class="zht-flb style_defStyle__3MGYX" d="M115.13,219.27c-.29,3.72,3,4.83,3.08,7.4.29,5.41.2,12.07,0,15.67-7.82.94-11.71,1.87-19.53,2.8" data-svg-origin="108.53763580322266 232.2050018310547" ></path>
+									<path class="zht-frt style_defStyle__3MGYX" d="M147.13,195.1c.57,15.88.16,15.56,2.12,19.6a9.51,9.51,0,0,1,1.1,4.29" data-svg-origin="148.74000549316406 207.0449981689453"></path>
+									<path class="zht-frb style_defStyle__3MGYX" d="M150.35,219c-.06,3.56-3,5.25-3.1,7.68-.28,5.41-.19,11.07,0,14.67,7.82.94,11.71,1.87,19.53,2.8" data-svg-origin="156.92607879638672 231.5749969482422" ></path>
+								</g>
+								<g class="zht-bg">
+									<path class="zht-b style_fillBlack__IIEI6" d="M156.58,98.9,131.44,64.35l-13.37,42.1L82.68,83.08,80.75,118l-39.64-8.18,14.17,32.3L29.53,157.79l30.68,11.34L60,200.92,94.13,181l9.22,33.45,26.75-27.64,25.76,25.11L172.92,178,213,193.34l-5.42-37.66,41.21-8.2-37.75-17.32,18.11-40.08L193,107.42l-5.18-36Z" data-svg-origin="29.530000686645508 64.3499984741211" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
+									<path class="zht-n style_fillWhite__3lGQA" d="M123.08,158.58v4.34H118.6v-4.34Z" data-svg-origin="118.5999984741211 158.5800018310547" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
+									<g class="zht-eo" data-svg-origin="96.83975219726562 139.599609375" style="transform-origin: 0px 0px 0px; opacity: 1;" transform="matrix(1,0,0,1,0,0)">
+										<path class="style_fillWhite__3lGQA" d="M109.53,140.6a7.37,7.37,0,0,1,3,2.91,9.69,9.69,0,0,1,0,8.93,7.5,7.5,0,0,1-3,2.91,9.55,9.55,0,0,1-8.59,0,7.41,7.41,0,0,1-3-2.91,9.61,9.61,0,0,1,0-8.93,7.28,7.28,0,0,1,3-2.91,9.72,9.72,0,0,1,8.59,0Zm-7.24,3.83a5.83,5.83,0,0,0,0,7.11,4.15,4.15,0,0,0,5.9,0,5.83,5.83,0,0,0,0-7.11,4.15,4.15,0,0,0-5.9,0Z"></path>
+										<path class="style_fillWhite__3lGQA" d="M140.77,140.6a7.35,7.35,0,0,1,3,2.91,9.61,9.61,0,0,1,0,8.93,7.47,7.47,0,0,1-3,2.91,9.55,9.55,0,0,1-8.59,0,7.5,7.5,0,0,1-3-2.91,9.69,9.69,0,0,1,0-8.93,7.37,7.37,0,0,1,3-2.91,9.72,9.72,0,0,1,8.59,0Zm-7.25,3.83a5.83,5.83,0,0,0,0,7.11,4.15,4.15,0,0,0,5.9,0,5.83,5.83,0,0,0,0-7.11,4.15,4.15,0,0,0-5.9,0Z"></path>
+									</g>
+									<g class="zht-ex style_zht-ex__2bXZg" style="opacity: 0;">
+										<path class="style_fillWhite__3lGQA" d="M99.76,151.23H95.63l7.08-15.73h4l7,15.73h-4.13l-4.9-10.92Z"></path>
+										<path class="style_fillWhite__3lGQA" d="M132.06,151.23h-4.14L135,135.5h4l7.05,15.73h-4.13L137,140.31Z"></path>
+									</g>
+									<g class="zht-h">
+										<path class="zht-hr style_defStyle__3MGYX" d="M205.91 160.16 C208.91 160.16 230.85 174.17 213.09 183.57 213.26 185.58 213.43 187.6 213.6 189.62 " data-original="M205.91,160.17c3,0,24.94,14,7.18,23.4l.51,6.05" data-svg-origin="205.91000366210938 160.1699981689453" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
+										<path class="zht-hl style_defStyle__3MGYX" d="M47.92 159 C47.92 159 39.22 185.42 58.92 185.05 58.79 187.44 58.66 189.83 58.54 192.23 " data-original="M47.92,159s-8.69,26.42,11,26.05l-.38,7.18" data-svg-origin="46.00981903076172 159" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</div>
+			
+			
 			<div class=" [ basic-margin-bottom ] ">
 				<a href="#" hreflang="fr" title="aller vers twitter"> twitter </a>
 				<a href="#" hreflang="fr" title="aller vers github"> github </a>
 				<a href="#" hreflang="fr" title="aller vers linkdin"> linkdin </a>
 			</div>
-			<div class="little-margin-bottom" >
+			<div class="little-margin-bottom">
 				<p class="  [  big-text-base light-text  basic-line-height ]">
 					Un développeur enthousiaste à l’idée d’utiliser sa créativité et son imagination pour répondre à vos
 					demandes.
@@ -92,36 +154,38 @@
 	</section>
 	
 	
-	<section class=" [ basic-margin basic-margin-bottom ] " >
-	<div class=" [ basic-margin-bottom ] " >
-		<h2 class=" [ big-text-title semi-bold-text ] ">
-			Que sais-je  <span class=" [ italic-text light-text ]"> faire</span>
-		</h2>
-	</div>
+	<section class=" [ basic-margin basic-margin-bottom ] ">
+		<div class=" [ basic-margin-bottom ] ">
+			<h2 class=" [ big-text-title semi-bold-text ] ">
+				Que sais-je <span class=" [ italic-text light-text ]"> faire</span>
+			</h2>
+		</div>
 		<div class=" little-margin-bottom ">
 			<p class=" basic-line-height big-text-base light-text ">
 				<!--La balise em a-t-elle bien était utilisé-->
 				TOUT. Sans plaisanter, J’ai été formé dans plusieurs écoles afin de devenir développeur
 				<span lang="en" title="à la fois back-end et front end">full-stack</span>, Notamment la célèbre
-				<abbr title="Haute école de la province de liège">HEPL</abbr> Seraing qui forment des personnes pour créer
+				<abbr title="Haute école de la province de liège">HEPL</abbr> Seraing qui forment des personnes pour
+				créer
 				un code <span lang="en" title="propre"><em> CLEAN </em></span> et les beaux-arts de Liège qui ont permis
 				d’accroitre ma sensibilité artistique.
 			</p>
 		</div>
-		<div class="" >
+		<div class="">
 			<p class=" basic-line-height light-text ">
 				Les sites web que je développe font attention à l’ergonomie et à l’utilisabilité de l’utilisateur, au
 				référencement du site sur les moteurs de recherche, ainsi qu’a l’accessibilité afin que toutes les
 				personnes,
-				qui le veulent, puissent profiter de votre site web. Je serais également capable de comprendre parfaitement
+				qui le veulent, puissent profiter de votre site web. Je serais également capable de comprendre
+				parfaitement
 				l’identité graphique qu’il vous faut et créer un design en fonction.
 			</p>
 		</div>
 	</section>
 	
 	<section class="basic-margin experience ">
-		<h2 class=" semi-bold-text big-text-title little-margin-bottom " >
-			Mon expéri<span class=" italic-text light-text " >ence</span>
+		<h2 class=" semi-bold-text big-text-title little-margin-bottom ">
+			Mon expéri<span class=" italic-text light-text ">ence</span>
 		</h2>
 		
 		<ul>
@@ -213,7 +277,7 @@
 			<li>
 				<section itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
 					<img alt="Enix Square de Studio " src="img-resized/Square-Enix-427.png" srcset="img-resized/Square-Enix-200.png 200w, img-resized/Square-Enix-427.png 427w">
-					<h3 class="experience-h3" >
+					<h3 class="experience-h3">
 						<span itemprop="name">Square-Enix</span>,
 						<span itemprop="name">Valve</span>,
 						<span itemprop="Location" itemscope itemtype="https://schema.org/PostalAddress">
@@ -252,14 +316,15 @@
 		</ul>
 	</section>
 	
-	<div class=" [ basic-margin huge-margin-top ] [ huge-margin-bottom ]  " >
-		<a class=" [ big-text-title underline  ] " href="#" title="aller sur le linkdin de Blanchar senga-vita"> Voir plus ici</a>
+	<div class=" [ basic-margin huge-margin-top flex-jc-center huge-margin-bottom ]  ">
+		<a class=" [ big-text-title underline  ] " href="#" title="aller sur le linkdin de Blanchar senga-vita"> Voir
+			plus ici</a>
 	</div>
 	
 	
-	<section class=" bg-color-black white-text oui ">
+	<section class=" trophees basic-padding bg-color-black white-text oui ">
 		<h2 class=" semi-bold-text big-text-title little-margin-bottom  ">
-			Mes troph<span class=" italic-text light-text " >ées</span>
+			Mes troph<span class=" italic-text light-text ">ées</span>
 		</h2>
 		<p class=" little-margin-bottom big-text-base ">
 			Adorant les nouveaux défis, je suis aussi un grand compétiteur en quêtes de titres. Voici les événements
@@ -319,9 +384,13 @@
 		</ul>
 	</section>
 	
-	<a href="#" hreflang="en" title="aller sur le linkdin de Blanchar senga-vita "> Encore plus ici</a>
-	<div>
-		<p>
+	<div class=" [ basic-margin huge-margin-top flex-jc-center huge-margin-bottom ]  ">
+		<a class=" [ big-text-title underline  ] " href="#" title="aller sur le linkdin de Blanchar senga-vita"> encore
+			plus ici</a>
+	</div>
+	
+	<div class=" [ basic-margin huge-margin-top flex-jc-center huge-margin-bottom ] ">
+		<p class=" [ basic-line-height big-text-base ] ">
 			Qu’est-ce qui fait que je gagne autant de compétition ? Mes formations sûrement, mais surtout La passion, je
 			code
 			et fait du design de façon récréatif. J’ai besoin de sentir que mes compétences grandissent. J’aspire à être
@@ -332,11 +401,12 @@
 		</p>
 	</div>
 	
-	<div>
-		<a href="https://conceptstudio.com/en/contact-form/"
-		   hreflang="en" title="Aller sur ma page contact pour proposer un service (en)󠁿">Travaillons ensemble</a>
-		<p>ou</p>
-		<a href="https://conceptstudio.com/en/team/"
+	<div class=" basic-margin flex-direction-column flex-al-center  big-margin-bottom ">
+		<a class=" [ big-text-title semi-bold-text underline ]" href="https://conceptstudio.com/en/contact-form/"
+		   hreflang="en" title="Aller sur ma page contact pour proposer un service (en)󠁿">Travaillons ensemble
+		</a>
+		<p class=" [ big-text-base ] ">ou</p>
+		<a class=" [ big-text-title ] " href="https://conceptstudio.com/en/team/"
 		   hreflang="en" title="Aller sur ma page contact pour rejoindre l'équipe (en)󠁿"> laissez moi rejoindre
 			votre équipe </a>
 	</div>
@@ -345,10 +415,10 @@
 <!-- Dire que s'ils m'envoie un message via mail, ils seront recontacté dans la semaine, dans le "formulaire de contact" -->
 <!-- Envoyer un accusé de reception -->
 
-<footer>
+<footer class=" wrapper [   ] [ mono-text bold-text ] ">
 	<a href="mailto:anchar2107@gmail.com"><span itemprop="email">anchar2107@gmail.com</span></a>
 	<p> blanchar senga-vita</p>
-	<a href="tel:+32492520430"><span itemprop="telephone">+32 4 92 52 04 30</span></a>
+	<a href="tel:+32492520430"><span itemprop="telephone"> +32 4 92 52 04 30</span></a>
 	<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
 		<p><span itemprop="streetAddress">Rue Molinvaux n°73</span></p>
 		<p><span itemprop="addressCountry">Belgique</span>-<span itemprop="postalCode">4000</span> <span
@@ -361,7 +431,6 @@
 	<a href="https://conceptstudio.com/en/legal/" hreflang="en"
 	   title="Aller voir les mentions légales, (en)"> Mentions légales</a>
 </footer>
-
 
 </body>
 
