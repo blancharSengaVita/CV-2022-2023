@@ -1,0 +1,180 @@
+:root {
+
+}
+
+.svg-menu {
+  width: 7em;
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.animation{
+  height: 17em;
+}
+
+.hero__animation {
+  position: absolute;
+  overflow: visible;
+  width: 13em;
+}
+
+
+.zht-hole {
+  animation: grow-shrink 7s infinite;
+}
+
+@keyframes grow-shrink {
+  0% {
+    rx: 136px; /* second 0 */
+  }
+  40% {
+    rx: 136px; /* second 2.8 */
+  }
+  45% {
+    rx: 0px; /* second 3.15 */
+  }
+  90% {
+    rx: 0px; /* second 6.3 */
+  }
+  100% {
+    rx: 136px; /* second 7 */
+  }
+}
+
+
+.zht-hole-b {
+  animation: grow-shrink-b 7s infinite;
+}
+
+@keyframes grow-shrink-b {
+  0% {
+    rx: 0px; /* second 0 */
+  }
+  85% {
+    rx: 0px; /* second 3.15 */
+  }
+  90% {
+    rx: 136px; /* second 6.3 */
+  }
+  95% {
+    rx: 136px; /* second 6.3 */
+  }
+  100% {
+    rx: 0px; /* second 7 */
+  }
+}
+
+.zht-cl {
+  animation: show 7s infinite;
+}
+
+@keyframes show {
+  0% {
+    height: 247.5px;
+    width: 300px;
+  }
+  40% {
+    height: 247.5px;
+    width: 300px;
+  }
+  41% {
+    height: 800px;
+    width: 300px
+  }
+  79% {
+    height: 800px;
+    width: 300px
+  }
+  99% {
+    height: 800px;
+    width: 300px
+  }
+}
+
+.zht-body {
+  position: relative;
+  animation: pop-in-out 7s infinite linear;
+}
+
+@keyframes pop-in-out {
+  0% {
+    left: 0px;
+    top: 400px;
+  }
+  10% {
+    left: 0px;
+    top: 100px;
+  }
+  20% {
+    left: 0px;
+    top: 100px;
+  }
+  40% {
+    left: 0px;
+    top: 0px;
+  }
+
+  80% {
+    left: 0px;
+    top: 0px;
+  }
+  90% {
+    left: 0px;
+    top: 800px;
+  }
+  100% {
+    left: 0px;
+    top: 800px;
+  }
+}
+
+.zht-eo {
+  fill: white;
+}
+
+.zht-flt, .zht-flb, .zht-frt, .zht-frb {
+  fill: none;
+  stroke: black;
+  stroke-width: 3
+}
+
+.zht-h {
+  fill: none;
+  stroke: black;
+  stroke-width: 3
+}
+
+.zht-n {
+  fill: white;
+}
+
+.zht-b {
+  fill: black;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.skip-links-container .skip-link {
+  position: absolute;
+  top: -3em;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 0.4em;
+  z-index: 1;
+  tab-index: 1;
+  transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out; /* add transition effect */
+  border: black;
+}
+
+.skip-link:focus {
+  top: 0;
+  opacity: 1; /* show skip link on focus */
+}
+
+
+.active {
+  transform: rotate(180deg);
+  transition: 300ms;
+}

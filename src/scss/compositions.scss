@@ -1,0 +1,108 @@
+
+//---- FLEX ----
+.flex-space-between{
+display: flex;
+justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-space-around{
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-direction-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-al-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-jc-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-jc-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+//---- GRID ----
+.grid{
+  display: grid;
+}
+
+//---- MARGIN -----
+
+.basic-margin {
+  padding: 0 1.5em;
+}
+
+.little-margin-bottom{
+  margin-bottom: 1em;
+}
+
+.basic-margin-bottom{
+  margin-bottom: 2.3em;
+}
+
+.intro-margin-right{
+  margin-right: 5em;
+}
+
+.margin-right{
+  margin-right: 2em;
+}
+
+.basic-margin-top {
+  margin-top: 1em;
+}
+
+.huge-margin-top {
+  margin-top: 11em;
+}
+
+.margin {
+  margin-left: 1em;
+}
+
+.big-margin-bottom{
+  margin-bottom: 5em;
+}
+
+.really-big-margin-bottom{
+  margin-bottom: 5em;
+}
+
+.huge-margin-bottom {
+  margin-bottom: 10em;
+}
+
+//----Padding----
+.basic-padding {
+  padding: 4em 1.5em;
+}
+
+.padding-right {
+  margin-right: 1.5em;
+}
+
+//---- absolute ----
+.absolute{
+  display: block;
+  position: absolute;
+  top: 1.5em;
+  right: 2.5em;
+}

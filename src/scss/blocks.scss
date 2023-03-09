@@ -1,0 +1,170 @@
+img {
+  width: 200px
+}
+
+
+.experience-h3 {
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+
+.experience p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.experience li {
+  margin-bottom: 4em;
+}
+
+.big-link {
+  font-size: 3.5em;
+}
+
+.trophees li {
+  border: 0.4em solid white;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.trophees li p {
+  margin-bottom: 1em;
+}
+
+.wrapper {
+  max-height: 120px;
+  border: 1px solid white;
+  display: flex;
+  overflow-x: auto;
+}
+
+.wrapper > * {
+  min-width: 15em;
+  justify-content: center;
+}
+
+
+.oui span:before {
+  //content: '';
+}
+
+.oui {
+
+  width: 60px;
+  height: 25px;
+  border: 3.5px solid black;
+  border-radius: 90%;
+  transform-origin: center;
+  animation: wink 15s infinite ease-in-out;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oui span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes wink {
+  0% {
+    //height: 25px
+    transform: scale(1, 1)
+  }
+  67% {
+    //height: 25px
+    transform: scale(1, 1)
+  }
+  70% {
+    //height: 1px;
+    transform: scale(1, 0.1)
+  }
+  73% {
+    //height: 25px;
+    transform: scale(1, 1)
+  }
+}
+
+.non {
+  width: 60px;
+  height: 35px;
+}
+
+.rara p {
+  line-height: 2em;
+  text-align: center;
+}
+
+.adjectif::before {
+  content: "creatif";
+  animation: changing-text infinite 1.5s;
+  //padding-left:10px;
+}
+
+@keyframes changing-text {
+  0% {
+    content: "créatif";
+  }
+
+  33% {
+    content: "imaginatif";
+  }
+
+  75% {
+    content: "énergétique";
+  }
+}
+
+.circle-svg {
+  transform: rotate(0);
+  transform-origin: center;
+  animation: swing 3s infinite;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(22deg);
+  }
+
+  50% {
+    transform: rotate(-23deg);
+  }
+
+  100% {
+    transform: rotate(22deg);
+  }
+
+}
+
+.rara {
+  position: relative;
+  width: 100%;
+}
+
+.rara svg {
+  position: absolute;
+  top: -20px;
+  right: 0.3em;
+}
+
+.social-link:hover{
+  transform: rotate(15deg);
+  transition: 300ms;
+}
+
+@keyframes oblique {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(15deg);
+  }
+}
