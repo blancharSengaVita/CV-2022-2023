@@ -1,6 +1,6 @@
 *
 !.gitignore
-!src
+!/src/*
 !img
 !public
 !index.html
