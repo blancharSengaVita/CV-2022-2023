@@ -1,9 +1,10 @@
 *
 !.gitignore
-!/src/*
-!img
-!public
+!/src
+!/img-resized
+!/public
 !index.html
 !package.json
 !package-lock.json
 !tsconfig.json
+!README.md
