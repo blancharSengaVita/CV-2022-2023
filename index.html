@@ -1,6 +1,8 @@
 <!-- Demander aux profs
 il faut pas mettre des classes partout, si ?
-
+web
+moz-transform
+mettre des em partout
 -->
 
 
@@ -27,7 +29,7 @@ il faut pas mettre des classes partout, si ?
 	<meta content="index, follow" name="robots">
 	<meta content="no-referrer" name="referrer">
 	<title> CV de blanchar Senga-Vita</title>
-	<link href="/src/main.scss" rel="stylesheet">
+	<link href="/src/scss/main.scss" rel="stylesheet">
 	<meta content="Les différents éléments qu'on peut retrouver dans le CV de Blanchar Senga-Vita" name="description">
 	<link href="/img/logo.png" rel="icon" type="image/png"/>
 	<!-- si j'ai trop de temps à perdre on va faire une feuille de style pour impression 190, regles 191 -->
@@ -35,7 +37,7 @@ il faut pas mettre des classes partout, si ?
 </head>
 
 <body itemscope itemtype="https://schema.org/Person">
-<header class="[ basic-margin little-margin-bottom basic-margin-top ]">
+<header class="[ basic-margin basic-margin-bottom basic-margin-top ]">
 	<ul class="skip-links-container">
 		<li><a class="skip-link" href="#menu" tabindex="1">Aller au menu</a></li>
 		<li><a class="skip-link" href="#global" tabindex="2">Aller au contenu</a></li>
@@ -80,75 +82,124 @@ il faut pas mettre des classes partout, si ?
 				</strong>
 			</h2>
 		</div>
-		<div class="">
-			<p class=" [ basic-margin-bottom ] [ mono-text basic-line-height ] [ intro-margin-right ] " itemprop="description">
-				Je suis un <span itemprop="jobTitle">Web designer</span> expérimenté, énergétique et optimiste qui
-				s’aura trouver des solutions aux problèmes que vous rencontrez, aussi bien, dans vos designs que dans le
-				développement de votre site web.
-			</p>
-			
-			<div class="animation">
-				
-				<svg class="petit" viewBox="0 0 272.13 267.46" xmlns="http://www.w3.org/2000/svg">
-					<defs>
-						<clipPath clipPathUnits="userSpaceOnUse" id="zhtClip">
-							<rect class="zht-cl" height="247.5" width="300" x="0" y="0"></rect>
-						</clipPath>
-						<clipPath clipPathUnits="userSpaceOnUse" id="zhtClipBig">
-							<rect class="zht-cl" height="800" width="300" x="0" y="0"></rect>
-						</clipPath>
-					</defs>
-					<ellipse class="zht-hole style_fillBlack__IIEI6" cx="136.06" cy="247.05" rx="136" ry="20"></ellipse>
-					<ellipse class="zht-hole-b style_fillBlack__IIEI6" cx="136.06" cy="790.06" rx="136" ry="20"></ellipse>
-					<g class="zht-bodylg" clip-path="url(#zhtClipBig)">
-						<g class="zht-bodyg" data-svg-origin="139.160005569458 122.8221206665039">
-							<g class="zht-body undefined" data-svg-origin="29.530000686645508 0.5042343139648438">
-								<g class="zht-f" transform="">
-									<path class="zht-flt style_defStyle__3MGYX" d="M117.65,193.4c3.41,21,.53,18.26-1.43,22.3a10.15,10.15,0,0,0-1.09,3.57" data-svg-origin="117.18022155761719 206.33499908447266" ></path>
-									<path class="zht-flb style_defStyle__3MGYX" d="M115.13,219.27c-.29,3.72,3,4.83,3.08,7.4.29,5.41.2,12.07,0,15.67-7.82.94-11.71,1.87-19.53,2.8" data-svg-origin="108.53763580322266 232.2050018310547" ></path>
-									<path class="zht-frt style_defStyle__3MGYX" d="M147.13,195.1c.57,15.88.16,15.56,2.12,19.6a9.51,9.51,0,0,1,1.1,4.29" data-svg-origin="148.74000549316406 207.0449981689453"></path>
-									<path class="zht-frb style_defStyle__3MGYX" d="M150.35,219c-.06,3.56-3,5.25-3.1,7.68-.28,5.41-.19,11.07,0,14.67,7.82.94,11.71,1.87,19.53,2.8" data-svg-origin="156.92607879638672 231.5749969482422" ></path>
+		<p class=" [ mono-text basic-line-height ] [ intro-margin-right ] " itemprop="description">
+			Je suis un <span itemprop="jobTitle">Web designer</span> expérimenté, énergétique et optimiste qui
+			s’aura trouver des solutions aux problèmes que vous rencontrez, aussi bien, dans vos designs que dans le
+			développement de votre site web.
+		</p>
+		<div class="animation flex-jc-end">
+			<svg class="hero__animation " viewBox="0 0 272.13 267.46" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<clipPath>
+						clipPathUnits="userSpaceOnUse" id="zhtClip">
+						<rect class="zht-cl" height="247.5" width="300" x="0" y="0"></rect>
+					</clipPath>
+					<clipPath clipPathUnits="userSpaceOnUse" id="zhtClipBig">
+						<rect class="zht-cl" height="800" width="300" x="0" y="0"></rect>
+					</clipPath>
+				</defs>
+				<ellipse class="zht-hole style_fillBlack__IIEI6" cx="136.06" cy="247.05" rx="136" ry="20"></ellipse>
+				<ellipse class="zht-hole-b style_fillBlack__IIEI6" cx="136.06" cy="790.06" rx="136" ry="20"></ellipse>
+				<g class="zht-bodylg"> <!-- clip-path="url(#zhtClip)" -->
+					<g class="zht-bodyg" clip-path="url(#zhtClipBig)" data-svg-origin="139.160005569458 122.8221206665039">
+						<g class="zht-body undefined" data-svg-origin="29.530000686645508 0.5042343139648438">
+							<g class="zht-f" transform="">
+								<path class="zht-flt style_defStyle__3MGYX" d="M117.65,193.4c3.41,21,.53,18.26-1.43,22.3a10.15,10.15,0,0,0-1.09,3.57" data-svg-origin="117.18022155761719 206.33499908447266"></path>
+								<path class="zht-flb style_defStyle__3MGYX" d="M115.13,219.27c-.29,3.72,3,4.83,3.08,7.4.29,5.41.2,12.07,0,15.67-7.82.94-11.71,1.87-19.53,2.8" data-svg-origin="108.53763580322266 232.2050018310547"></path>
+								<path class="zht-frt style_defStyle__3MGYX" d="M147.13,195.1c.57,15.88.16,15.56,2.12,19.6a9.51,9.51,0,0,1,1.1,4.29" data-svg-origin="148.74000549316406 207.0449981689453"></path>
+								<path class="zht-frb style_defStyle__3MGYX" d="M150.35,219c-.06,3.56-3,5.25-3.1,7.68-.28,5.41-.19,11.07,0,14.67,7.82.94,11.71,1.87,19.53,2.8" data-svg-origin="156.92607879638672 231.5749969482422"></path>
+							</g>
+							<g class="zht-bg ">
+								<path class="zht-b style_fillBlack__IIEI6" d="M156.58,98.9,131.44,64.35l-13.37,42.1L82.68,83.08,80.75,118l-39.64-8.18,14.17,32.3L29.53,157.79l30.68,11.34L60,200.92,94.13,181l9.22,33.45,26.75-27.64,25.76,25.11L172.92,178,213,193.34l-5.42-37.66,41.21-8.2-37.75-17.32,18.11-40.08L193,107.42l-5.18-36Z" data-svg-origin="29.530000686645508 64.3499984741211" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
+								<path class="zht-n style_fillWhite__3lGQA" d="M123.08,158.58v4.34H118.6v-4.34Z" data-svg-origin="118.5999984741211 158.5800018310547" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
+								<g class="zht-eo" data-svg-origin="96.83975219726562 139.599609375" style="transform-origin: 0px 0px 0px; opacity: 1;" transform="matrix(1,0,0,1,0,0)">
+									<path class="style_fillWhite__3lGQA" d="M109.53,140.6a7.37,7.37,0,0,1,3,2.91,9.69,9.69,0,0,1,0,8.93,7.5,7.5,0,0,1-3,2.91,9.55,9.55,0,0,1-8.59,0,7.41,7.41,0,0,1-3-2.91,9.61,9.61,0,0,1,0-8.93,7.28,7.28,0,0,1,3-2.91,9.72,9.72,0,0,1,8.59,0Zm-7.24,3.83a5.83,5.83,0,0,0,0,7.11,4.15,4.15,0,0,0,5.9,0,5.83,5.83,0,0,0,0-7.11,4.15,4.15,0,0,0-5.9,0Z"></path>
+									<path class="style_fillWhite__3lGQA" d="M140.77,140.6a7.35,7.35,0,0,1,3,2.91,9.61,9.61,0,0,1,0,8.93,7.47,7.47,0,0,1-3,2.91,9.55,9.55,0,0,1-8.59,0,7.5,7.5,0,0,1-3-2.91,9.69,9.69,0,0,1,0-8.93,7.37,7.37,0,0,1,3-2.91,9.72,9.72,0,0,1,8.59,0Zm-7.25,3.83a5.83,5.83,0,0,0,0,7.11,4.15,4.15,0,0,0,5.9,0,5.83,5.83,0,0,0,0-7.11,4.15,4.15,0,0,0-5.9,0Z"></path>
 								</g>
-								<g class="zht-bg">
-									<path class="zht-b style_fillBlack__IIEI6" d="M156.58,98.9,131.44,64.35l-13.37,42.1L82.68,83.08,80.75,118l-39.64-8.18,14.17,32.3L29.53,157.79l30.68,11.34L60,200.92,94.13,181l9.22,33.45,26.75-27.64,25.76,25.11L172.92,178,213,193.34l-5.42-37.66,41.21-8.2-37.75-17.32,18.11-40.08L193,107.42l-5.18-36Z" data-svg-origin="29.530000686645508 64.3499984741211" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
-									<path class="zht-n style_fillWhite__3lGQA" d="M123.08,158.58v4.34H118.6v-4.34Z" data-svg-origin="118.5999984741211 158.5800018310547" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
-									<g class="zht-eo" data-svg-origin="96.83975219726562 139.599609375" style="transform-origin: 0px 0px 0px; opacity: 1;" transform="matrix(1,0,0,1,0,0)">
-										<path class="style_fillWhite__3lGQA" d="M109.53,140.6a7.37,7.37,0,0,1,3,2.91,9.69,9.69,0,0,1,0,8.93,7.5,7.5,0,0,1-3,2.91,9.55,9.55,0,0,1-8.59,0,7.41,7.41,0,0,1-3-2.91,9.61,9.61,0,0,1,0-8.93,7.28,7.28,0,0,1,3-2.91,9.72,9.72,0,0,1,8.59,0Zm-7.24,3.83a5.83,5.83,0,0,0,0,7.11,4.15,4.15,0,0,0,5.9,0,5.83,5.83,0,0,0,0-7.11,4.15,4.15,0,0,0-5.9,0Z"></path>
-										<path class="style_fillWhite__3lGQA" d="M140.77,140.6a7.35,7.35,0,0,1,3,2.91,9.61,9.61,0,0,1,0,8.93,7.47,7.47,0,0,1-3,2.91,9.55,9.55,0,0,1-8.59,0,7.5,7.5,0,0,1-3-2.91,9.69,9.69,0,0,1,0-8.93,7.37,7.37,0,0,1,3-2.91,9.72,9.72,0,0,1,8.59,0Zm-7.25,3.83a5.83,5.83,0,0,0,0,7.11,4.15,4.15,0,0,0,5.9,0,5.83,5.83,0,0,0,0-7.11,4.15,4.15,0,0,0-5.9,0Z"></path>
-									</g>
-									<g class="zht-ex style_zht-ex__2bXZg" style="opacity: 0;">
-										<path class="style_fillWhite__3lGQA" d="M99.76,151.23H95.63l7.08-15.73h4l7,15.73h-4.13l-4.9-10.92Z"></path>
-										<path class="style_fillWhite__3lGQA" d="M132.06,151.23h-4.14L135,135.5h4l7.05,15.73h-4.13L137,140.31Z"></path>
-									</g>
-									<g class="zht-h">
-										<path class="zht-hr style_defStyle__3MGYX" d="M205.91 160.16 C208.91 160.16 230.85 174.17 213.09 183.57 213.26 185.58 213.43 187.6 213.6 189.62 " data-original="M205.91,160.17c3,0,24.94,14,7.18,23.4l.51,6.05" data-svg-origin="205.91000366210938 160.1699981689453" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
-										<path class="zht-hl style_defStyle__3MGYX" d="M47.92 159 C47.92 159 39.22 185.42 58.92 185.05 58.79 187.44 58.66 189.83 58.54 192.23 " data-original="M47.92,159s-8.69,26.42,11,26.05l-.38,7.18" data-svg-origin="46.00981903076172 159" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
-									</g>
+								<g class="zht-ex style_zht-ex__2bXZg" style="opacity: 0;">
+									<path class="style_fillWhite__3lGQA" d="M99.76,151.23H95.63l7.08-15.73h4l7,15.73h-4.13l-4.9-10.92Z"></path>
+									<path class="style_fillWhite__3lGQA" d="M132.06,151.23h-4.14L135,135.5h4l7.05,15.73h-4.13L137,140.31Z"></path>
+								</g>
+								<g class="zht-h">
+									<path class="zht-hr style_defStyle__3MGYX" d="M205.91 160.16 C208.91 160.16 230.85 174.17 213.09 183.57 213.26 185.58 213.43 187.6 213.6 189.62 " data-original="M205.91,160.17c3,0,24.94,14,7.18,23.4l.51,6.05" data-svg-origin="205.91000366210938 160.1699981689453" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
+									<path class="zht-hl style_defStyle__3MGYX" d="M47.92 159 C47.92 159 39.22 185.42 58.92 185.05 58.79 187.44 58.66 189.83 58.54 192.23 " data-original="M47.92,159s-8.69,26.42,11,26.05l-.38,7.18" data-svg-origin="46.00981903076172 159" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
 								</g>
 							</g>
 						</g>
 					</g>
-				</svg>
+				</g>
+			</svg>
+		</div>
+		
+		
+		<div class=" [ basic-margin-bottom ] ">
+			
+			<div class="non flex basic-margin-bottom ">
+				<a class="social-link"  href="">
+					<div class="oui margin-right">
+						<span>
+							<svg height="20" viewBox="0 0 1000 1000" width="20" xmlns="http://www.w3.org/2000/svg">
+								<path d="m490,980c270.6,0,490-219.4,490-490S760.6,0,490,0,0,219.4,0,490s219.4,490,490,490Zm-144-615.5c94.2,47.6,173.8,44.8,173.8,44.8,0,0-30.2-105.2,63.1-151.8,93.3-46.6,157.5,32,157.5,32,0,0,16.3-4.5,28.4-8.9,12.1-4.5,29.7-12.4,29.7-12.4l-28.7,51.3,44.3-4.7s-5.5,8-23.2,24.2-25,24.6-25,24.6c0,0,6.3,126.6-60.4,224.1s-152.9,156-278.1,168.3-206.7-38.4-206.7-38.4c0,0,54.7-3.1,89.6-16.5,34.9-13.3,85.1-48.5,85.1-48.5,0,0-71.3-22-97-46.6-25.6-24.7-32-39.3-32-39.3l70.4-.9s-74.1-39.3-95.1-70.4c-21-31.1-23.8-61.3-23.8-61.3l54.1,21.9s-45-61.2-51.4-108.8c-6.4-47.6,8.2-73.2,8.2-73.2,0,0,23,42.9,117.2,90.5Z"/>
+							</svg>
+						</span>
+					</div>
+				</a>
+				
+				<a class="social-link"  href="">
+					<div class="oui margin-right">
+						<span>
+							<svg height="20" viewBox="0 0 800 800" width="20" xmlns="http://www.w3.org/2000/svg">
+								<path d="m400,0C179.06,0,0,179.06,0,400s179.06,400,400,400,400-179.06,400-400S620.94,0,400,0Zm-111.87,567.34h-77.97v-249.53h77.97v249.53Zm-41.09-280.78h-.62c-28.28,0-46.56-19.06-46.56-43.28s18.91-43.28,47.66-43.28,46.41,18.59,47.03,43.28c.16,24.06-18.12,43.28-47.5,43.28Zm352.97,280.78h-88.44v-129.06c0-33.75-13.75-56.87-44.22-56.87-23.28,0-36.25,15.62-42.19,30.63-2.19,5.31-1.87,12.81-1.87,20.47v134.84h-87.66s1.09-228.75,0-249.53h87.66v39.22c5.16-17.19,33.13-41.56,77.81-41.56,55.47,0,98.91,35.94,98.91,113.12v138.75Z"/>
+							</svg>
+						</span>
+					</div>
+				</a>
+				
+				<a class="social-link" href="">
+					<div class="oui margin-right">
+						<span>
+							<svg height="20" viewBox="0 0 533.32 530.05" width="20" xmlns="http://www.w3.org/2000/svg">
+								<path d="m533.31,263.39c-.62-50.82-15.76-100.4-43.62-142.9s-67.28-76.16-113.63-97.01C329.72,2.62,278.38-4.55,228.09,2.81c-50.29,7.35-97.42,28.92-135.86,62.16C53.79,98.21,25.65,141.75,11.12,190.45c-14.52,48.7-14.83,100.54-.88,149.41s41.57,92.73,79.62,126.43c38.04,33.7,84.92,55.82,135.12,63.76v-189h-66.67v-77.67h66.67v-59c-1.54-13.72-.06-27.61,4.36-40.69,4.41-13.08,11.64-25.03,21.18-35.02,9.54-9.98,21.15-17.75,34.01-22.75,12.87-5,26.68-7.12,40.45-6.21,19.99.27,39.94,2.06,59.67,5.33v66.67h-33.33c-5.75-.72-11.59-.15-17.08,1.69-5.5,1.83-10.51,4.88-14.67,8.91-4.16,4.03-7.36,8.95-9.36,14.38-2.01,5.44-2.76,11.25-2.22,17.02v50.33h74l-12,77.67h-61.67v186.67c63-9.96,120.34-42.18,161.62-90.8,41.28-48.62,63.77-110.42,63.38-174.2Z"/>
+							</svg>
+						</span>
+					</div>
+				</a>
 			</div>
 			
-			
-			<div class=" [ basic-margin-bottom ] ">
-				<a href="#" hreflang="fr" title="aller vers twitter"> twitter </a>
-				<a href="#" hreflang="fr" title="aller vers github"> github </a>
-				<a href="#" hreflang="fr" title="aller vers linkdin"> linkdin </a>
-			</div>
-			<div class="little-margin-bottom">
+			<div class="big-margin-bottom">
 				<p class="  [  big-text-base light-text  basic-line-height ]">
 					Un développeur enthousiaste à l’idée d’utiliser sa créativité et son imagination pour répondre à vos
 					demandes.
 				</p>
 			</div>
 		</div>
-		<div class=" [ flex-end ] ">
-			<p class=" flex-direction-column ">
-				<span>Prêt à rentrer dans</span> <span>un univers à la fois</span> Créatif
-			</p>
+		<div class=" rara [ flex-end huge-margin-bottom  ] [ mono-text ] ">
+			<div>
+				<div>
+					<p class=" padding-right flex-jc-center flex-al-center flex-direction-column ">
+						<span>Prêt à rentrer dans</span>
+						<span>un univers à la fois</span>
+						<strong class=" adjectif bold-text ">
+						</strong>
+					</p>
+				</div>
+				<div class=" flex-jc-center flex-al-center ">
+					<svg width="180" height="170" class="circle-svg style_circle_svg__qbuOu" viewBox="0 0 310 310" xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<path class="circle style_circle__A0kNw" d="M2.1,196.1c19.5,48.1,80.4,97.3,153.8,97.3c74.1,0,135.1-46.1,154.2-98.3" id="circlePath" style="fill: skyblue"></path>
+						</defs>
+						<text>
+							<textPath class="font-anonymous font-bold style_circle_text__xMKMo"  id="masterTextPath" xlink:href="#circlePath">
+								Que l'aventure commence
+							</textPath>
+						</text>
+					</svg>
+				</div>
+			</div>
+		
 		</div>
+		
+		
 	
 	
 	</section>
@@ -431,7 +482,7 @@ il faut pas mettre des classes partout, si ?
 	<a href="https://conceptstudio.com/en/legal/" hreflang="en"
 	   title="Aller voir les mentions légales, (en)"> Mentions légales</a>
 </footer>
-
+<script src="src/js/main.js"> </script>
 </body>
 
 </html>
