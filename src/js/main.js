@@ -36,8 +36,11 @@ const h2s  = document.querySelectorAll('h2')
 
 const images = document.querySelectorAll('img');
 
+const elements = document.querySelectorAll(".cool");
+const delay = 75;
 
-
-for (const h2 of h2s) {
-  //h2.innerText = '';
-}
+elements.forEach((element, index) => {
+  setTimeout(() => {
+    element.classList.add("test");
+  }, delay * (index + 1));
+});
