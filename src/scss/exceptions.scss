@@ -3,7 +3,7 @@
 }
 
 .svg-menu {
-  width: 7em;
+  //width: 7em;
   fill: none;
   stroke: black;
   stroke-width: 3;
@@ -177,4 +177,12 @@
 .active {
   transform: rotate(180deg);
   transition: 300ms;
+  color: red;
+}
+
+nav{
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
