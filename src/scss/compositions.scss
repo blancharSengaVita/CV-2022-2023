@@ -46,8 +46,16 @@ justify-content: space-between;
 
 //---- MARGIN -----
 
-.basic-margin {
-  padding: 0 1.5em;
+.basic-margin-top {
+  margin-top: 1em;
+}
+
+.little-margin-top{
+  margin: 2rem;
+}
+
+.big-margin-top{
+  margin-top : 7em;
 }
 
 .little-margin-bottom{
@@ -55,7 +63,7 @@ justify-content: space-between;
 }
 
 .basic-margin-bottom{
-  margin-bottom: 2.3em;
+  margin-bottom: 4em;
 }
 
 .intro-margin-right{
@@ -66,13 +74,7 @@ justify-content: space-between;
   margin-right: 2em;
 }
 
-.basic-margin-top {
-  margin-top: 1em;
-}
 
-.huge-margin-top {
-  margin-top: 11em;
-}
 
 .margin {
   margin-left: 1em;
@@ -90,13 +92,25 @@ justify-content: space-between;
   margin-bottom: 10em;
 }
 
+.padding-right {
+  margin-right: 1.5em;
+}
+
+.big-margin-right{
+  margin-right: 5rem;
+}
+
 //----Padding----
+.padding-top{
+  padding-top: 2em;
+}
+
 .basic-padding {
   padding: 4em 1.5em;
 }
 
-.padding-right {
-  margin-right: 1.5em;
+.basic-margin {
+  padding: 0 1.5em 0 1.5em;
 }
 
 //---- absolute ----

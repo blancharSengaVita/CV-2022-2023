@@ -180,9 +180,33 @@
   color: red;
 }
 
-nav{
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+.svg-body-type-1{
+  fill: none;
+  stroke: black;
+  stroke-width: 3
+}
+
+.svg-fill-white{
+  fill: white;
+}
+
+.svg-fill-black{
+  fill: black;
+}
+
+.svg-body-type-2{
+  fill: black;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.svg-stroke-black{
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+}
+
+.circled-svg-menu{
+  width: 100px;
+  height: 100px;
 }

@@ -30,7 +30,7 @@
   font-size: 1rem;
 }
 
-.text-logo{
+.small-text-logo{
   font-size: 0.7rem;
 }
 
@@ -99,6 +99,40 @@ line-height : 1.5em;
 
 //https://www.youtube.com/watch?v=WWN-68aQ-Qk
 
+
+//position
 .relative{
   position: relative;
+}
+
+//
+.scrolling-down{
+  top: -200px;
+}
+
+//visibility
+.test {
+  visibility: hidden;
+}
+
+.test-1{
+  visibility: initial;
+}
+
+.medium-line-height{
+  line-height: 2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+//transform
+
+.scale-0 {
+  transform: scale(0);
+}
+
+.scale-1 {
+  transform: scale(1);
 }
