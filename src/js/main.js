@@ -93,7 +93,7 @@ function makeLiAppear(){
        if(listAppearAt){
        setTimeout(() => {
         tropheesli.classList.remove('scale-0');
-      }, 125 * (index + 1));
+      }, 50 * (index + 1));
     }
        if(!listAppearAt) {
          tropheesli.classList.add('scale-0');

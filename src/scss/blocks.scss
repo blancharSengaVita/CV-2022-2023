@@ -34,7 +34,7 @@ img {
 
 .trophees li {
   transform-origin: center;
-  transition: center 0.3s;
+  transition: transform 0.4s ease-in;
   width: 100%;
   justify-self: center;
   border: 0.4em solid white;
@@ -174,8 +174,6 @@ img {
 
 }
 
-
-
 .social-link:hover {
   transform: rotate(15deg);
   transition: 300ms;
@@ -216,9 +214,49 @@ nav {
 }
 
 .reversed-arrow-svg{
+  margin-top: 7rem;
   width: 14rem;
   transform: matrix(-1, 0, 0, 1, -15, 0);
   animation: reversed-arrow-move 2s infinite ease-in-out;
+  fill: white;
+}
+
+@keyframes reversed-arrow-move {
+  50%{
+    transform: matrix(-0.90, -0.45, -0.45, 0.90, 25, -20);
+  }
+}
+
+.or-svg-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+
+}
+
+.or-svg-container g {
+  transform-origin: center;
+  animation: turn 4s infinite linear;
+}
+
+@keyframes turn {
+  100%{
+    transform: rotateY(360deg);
+  }
+}
+
+.or-svg-container text {
+  fill: white;
+  font-size: 50px;
+
+}
+
+.reversed-arrow-svg-black{
+  width: 7rem;
+  transform: matrix(-1, 0, 0, 1, -15, 0);
+  animation: reversed-arrow-move 1.2s infinite ease-in-out;
+  fill: black;
 }
 
 @keyframes reversed-arrow-move {
