@@ -1,5 +1,5 @@
 :root {
-
+  background-color: white;
 }
 
 .svg-menu {
@@ -209,4 +209,23 @@
 .circled-svg-menu{
   width: 100px;
   height: 100px;
+  fill: none;
+  stroke: black;
+  stroke-width:3;
 }
+
+.circled-svg-menu path{
+  fill: none;
+  stroke: white;
+  stroke-width:3;
+}
+
+.circled-svg-menu text{
+  font-size: 40px;
+  dominant-baseline: middle;
+  text-anchor : middle;
+  stroke-width: 3;
+  stroke: none;
+  fill: white;
+}
+

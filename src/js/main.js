@@ -101,5 +101,5 @@ function makeLiAppear(){
   });
 }
 
-console.log(tropheeslis[0]);
+console.log(document.querySelector('footer .oui'));
 window.addEventListener('scroll', makeLiAppear);
