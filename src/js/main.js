@@ -109,38 +109,31 @@ window.addEventListener('scroll', makeLiAppear);
 const links = document.querySelector('.big-link-2');
 const linksText = document.querySelector('.no-js-link-text');
 const letters = Array.from(links.textContent);
-const grands = document.querySelectorAll('.grands');
-
-
 links.classList.remove("bigger");
-
 
 for (let letter of letters) {
   links.insertAdjacentHTML('beforeend', `<span class="grand">${letter}</span>`);
 }
-links.addEventListener('mouseover', (e)=> {
+
+const grands = document.querySelectorAll('.grand');
+
+console.log(document.querySelectorAll('.grand'));
+grandesLettre = Array.from(grands)
+
+links.addEventListener('mouseover', ()=> {
+  grandesLettre.forEach((letter, index) => {
   setTimeout(() => {
-    grands.forEach((letter, index) => {
       letter.classList.add('bigger');
-    }, 100 * (index + 1));
+    },  25 * (index + 1));
   });
 });
 
 links.addEventListener('mouseout', (e)=>{
-  e.currentTarget.classList.remove('bigger')
+  grandesLettre.forEach((letter, index) => {
+    setTimeout(() => {
+      letter.classList.remove('bigger');
+    },  25 * (index + 1));
+  });
 });
 
 linksText.textContent = '';
-
-
-
-// for (const link of links) {
-//   link.classList.remove("bigger");
-//   const letters = link.textContent;
-// setTimeout(() => {letters.forEach((letter, index)=>{
-//
-
-//     }, 200 * (index + 1));
-//   });
-//
-// }
