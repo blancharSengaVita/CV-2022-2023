@@ -2,6 +2,11 @@
   background-color: white;
 }
 
+body {
+  background-color: white;
+
+}
+
 .svg-menu {
   //width: 7em;
   fill: none;
@@ -9,7 +14,7 @@
   stroke-width: 3;
 }
 
-.animation{
+.animation {
   height: 17em;
 }
 
@@ -180,52 +185,159 @@
   color: red;
 }
 
-.svg-body-type-1{
+.svg-body-type-1 {
   fill: none;
   stroke: black;
   stroke-width: 3
 }
 
-.svg-fill-white{
+.svg-fill-white {
   fill: white;
 }
 
-.svg-fill-black{
+.svg-fill-black {
   fill: black;
 }
 
-.svg-body-type-2{
+.svg-body-type-2 {
   fill: black;
   stroke: black;
   stroke-width: 3;
 }
 
-.svg-stroke-black{
+.svg-stroke-black {
   fill: none;
   stroke: black;
   stroke-width: 3;
 }
 
-.circled-svg-menu{
+.circled-svg-menu {
   width: 100px;
   height: 100px;
   fill: none;
   stroke: black;
-  stroke-width:3;
+  stroke-width: 3;
 }
 
-.circled-svg-menu path{
+.circled-svg-menu path {
   fill: none;
   stroke: white;
-  stroke-width:3;
+  stroke-width: 3;
 }
 
-.circled-svg-menu text{
+.circled-svg-menu text {
   font-size: 40px;
   dominant-baseline: middle;
-  text-anchor : middle;
+  text-anchor: middle;
   stroke-width: 3;
   stroke: none;
   fill: white;
 }
 
+main {
+  background-color: white;
+  z-index: 2;
+}
+
+main, footer {
+  position: sticky;
+  bottom: 0;
+}
+
+body {
+  cursor: crosshair;
+}
+
+.style_zht-ex__2bXZg {
+  opacity: 0;
+}
+
+.underline__svg__container {
+  position: relative;
+}
+
+
+.underline__call-to-action {
+  stroke: black;
+  stroke-width: 3;
+  position: absolute;
+  top: -0.1em;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 0;
+  animation: draw-svg-back 1s ease-out;
+  height: 5px;
+  width: 280px;
+}
+
+a .underline__call-to-action line {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 0;
+  animation: draw-svg-back-call 1s ease-out;
+}
+
+a:hover .underline__call-to-action line {
+  animation: draw-svg-call 1s;
+  stroke-dashoffset: 600;
+}
+
+@keyframes draw-svg-call {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 600;
+  }
+}
+
+
+@keyframes draw-svg-back-call {
+  0% {
+    stroke-dashoffset: 600;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.circled-svg-call-to-action {
+  stroke: black;
+  stroke-width: 0.2rem;
+  width: 320px;
+  height: 192px;
+  fill: none;
+}
+
+
+.call-to-action-2-svg-container{
+  position: relative;
+}
+
+.circled-svg-call-to-action {
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+}
+
+.circled-svg-call-to-action path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 0;
+  animation: draw-svg-back 1s;
+}
+
+.call-to-action-2-svg-container:hover .circled-svg-call-to-action path {
+  animation: draw-svg 1s;
+  stroke-dashoffset: 600;
+}
+
+.bigger-no-js:hover {
+  font-weight: 700;
+  //transform: translateY(-20px) scale(2) rotate(10deg);
+  z-index: 1;
+}
+
+.bigger{
+  font-weight: 700;
+  //transform: translateY(-20px) scale(2) rotate(10deg);
+  z-index: 1;
+}

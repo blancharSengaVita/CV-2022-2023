@@ -81,9 +81,25 @@ img {
 }
 
 .svg__trapeze {
+  width: 120%;
+  transform: translateY(-3em) translateX(-10em)  rotate(-173deg);
+}
+
+.svg__cercle{
+  width: 100%;
+  transform: rotate(-20deg) translateY(-3em) translateX(5em);
+}
+
+.svg__pizza {
+  width: 110%;
+  transform: rotate(-5deg) translateY(-2em) translateX(-5em) matrix(0.174, 0.985,-0.985,0.174, 50, 60) ;
+}
+.svg__pico {
   width: 110%;
   transform: rotate(-20deg) translateY(-2em) translateX(3em);
 }
+
+
 
 .wrapper {
   max-height: 120px;
@@ -323,4 +339,40 @@ nav {
 
 .info__address > p {
   margin-bottom: 1rem;
+}
+
+.call__to__action-container {
+  max-width: 300px;
+  margin: 7em  auto 0 auto;
+  padding-bottom: 10em;
+}
+
+.circled-svg-menu path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 0;
+  animation: draw-svg-back 0.5s ease-out;
+}
+
+.circled-svg-menu:hover path {
+  animation: draw-svg 0.5s ;
+  stroke-dashoffset: 600;
+}
+
+@keyframes draw-svg {
+  0%{
+    stroke-dashoffset: 0;
+  }
+  100%{
+    stroke-dashoffset: 600;
+  }
+}
+
+
+@keyframes draw-svg-back {
+  0%{
+    stroke-dashoffset: 600;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
 }

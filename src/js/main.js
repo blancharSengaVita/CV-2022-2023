@@ -86,8 +86,7 @@ for (const tropheesli of tropheeslis) {
   tropheesli.classList.add("scale-0");
 }
 function makeLiAppear(){
-  tropheeslis.forEach((tropheesli, index) =>
-     {
+  tropheeslis.forEach((tropheesli, index) =>  {
     const goBigAt = (window.scrollY + window.innerHeight) - (tropheeslis[0].offsetHeight);
     const listAppearAt = goBigAt > tropheeslis[0].offsetTop;
        if(listAppearAt){
@@ -103,3 +102,45 @@ function makeLiAppear(){
 
 console.log(document.querySelector('footer .oui'));
 window.addEventListener('scroll', makeLiAppear);
+
+
+// GET EACH LETTER BIGGER ON HOVER
+
+const links = document.querySelector('.big-link-2');
+const linksText = document.querySelector('.no-js-link-text');
+const letters = Array.from(links.textContent);
+const grands = document.querySelectorAll('.grands');
+
+
+links.classList.remove("bigger");
+
+
+for (let letter of letters) {
+  links.insertAdjacentHTML('beforeend', `<span class="grand">${letter}</span>`);
+}
+links.addEventListener('mouseover', (e)=> {
+  setTimeout(() => {
+    grands.forEach((letter, index) => {
+      letter.classList.add('bigger');
+    }, 100 * (index + 1));
+  });
+});
+
+links.addEventListener('mouseout', (e)=>{
+  e.currentTarget.classList.remove('bigger')
+});
+
+linksText.textContent = '';
+
+
+
+// for (const link of links) {
+//   link.classList.remove("bigger");
+//   const letters = link.textContent;
+// setTimeout(() => {letters.forEach((letter, index)=>{
+//
+
+//     }, 200 * (index + 1));
+//   });
+//
+// }

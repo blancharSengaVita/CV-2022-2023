@@ -19,7 +19,7 @@ mettre des em partout
 <!-- robots 212  -->
 <!-- sitemap.xml 213 -->
 <!-- zip en serveur et mimimier le js et le css 219  -->
-<!-- voice meter, google analytics-->
+<!-- voice meter over, google analytics-->
 <!-- Faire en sorte qu'aux zoom le contenu s'adapte -->
 <!DOCTYPE html>
 <html lang="fr">
@@ -33,16 +33,16 @@ mettre des em partout
 	<meta content="Les différents éléments qu'on peut retrouver dans le CV de Blanchar Senga-Vita" name="description">
 	<link href="/img/logo.png" rel="icon" type="image/png"/>
 	<!-- si j'ai trop de temps à perdre on va faire une feuille de style pour impression 190, regles 191 -->
-	<link href="print.css" media="print" rel="stylesheet" type="text/css"/>
+<!--	<link href="print.css" media="print" rel="stylesheet" type="text/css"/>-->
 </head>
 
 <body itemscope itemtype="https://schema.org/Person">
 <header class="[ basic-margin basic-margin-bottom padding-top">
 	
 	<ul class="skip-links-container">
-		<li><a class="skip-link" href="#menu" tabindex="1">Aller au menu</a></li>
-		<li><a class="skip-link" href="#global" tabindex="2">Aller au contenu</a></li>
-	</ul> <!-- /evitement -->
+		<li><a class="skip-link" href="#menu" tabindex="0">Aller au menu</a></li>
+		<li><a class="skip-link" href="#global" tabindex="1">Aller au contenu</a></li>
+	</ul>
 	
 	<nav id="menu" class="basic-margin-bottom mix-blend-mode-difference">
 		<div class="[ flex-space-between   flex-al-center ] ">
@@ -61,7 +61,7 @@ mettre des em partout
 				<a href="#">
 					<svg class=" circled-svg-menu" viewBox="65.2 14.9 231 99">
 						<path class="" d="M225.7,92c0,0-169,49.6-157.8-9.1S283.1-2.9,293,35.1c9.9,37.9-66.8,76.1-66.8,76.1"></path>
-						<text class="mix-blend-mode-difference black-text fill-black" x="80%" y="65%"> menu
+						<text class=" black-text fill-black" x="80%" y="65%"> menu
 						</text>
 					</svg>
 				</a>
@@ -72,7 +72,7 @@ mettre des em partout
 	</nav>
 </header>
 
-<main id="global">
+<main class="curtain" id="global">
 	<section class=" [ big-margin-top basic-margin basic-margin-bottom ] ">
 		<div class="[ basic-margin-bottom ]">
 			<h2 class=" [ big-text-title  semi-bold-text ] ">
@@ -111,28 +111,28 @@ mettre des em partout
 				<ellipse class="zht-hole style_fillBlack__IIEI6" cx="136.06" cy="247.05" rx="136" ry="20"></ellipse>
 				<ellipse class="zht-hole-b style_fillBlack__IIEI6" cx="136.06" cy="790.06" rx="136" ry="20"></ellipse>
 				<g class="zht-bodylg"> <!-- clip-path="url(#zhtClip)" -->
-					<g class="zht-bodyg" clip-path="url(#zhtClipBig)" data-svg-origin="139.160005569458 122.8221206665039">
-						<g class="zht-body undefined" data-svg-origin="29.530000686645508 0.5042343139648438">
-							<g class="zht-f" transform="">
-								<path class="zht-flt style_defStyle__3MGYX" d="M117.65,193.4c3.41,21,.53,18.26-1.43,22.3a10.15,10.15,0,0,0-1.09,3.57" data-svg-origin="117.18022155761719 206.33499908447266"></path>
-								<path class="zht-flb style_defStyle__3MGYX" d="M115.13,219.27c-.29,3.72,3,4.83,3.08,7.4.29,5.41.2,12.07,0,15.67-7.82.94-11.71,1.87-19.53,2.8" data-svg-origin="108.53763580322266 232.2050018310547"></path>
-								<path class="zht-frt style_defStyle__3MGYX" d="M147.13,195.1c.57,15.88.16,15.56,2.12,19.6a9.51,9.51,0,0,1,1.1,4.29" data-svg-origin="148.74000549316406 207.0449981689453"></path>
-								<path class="zht-frb style_defStyle__3MGYX" d="M150.35,219c-.06,3.56-3,5.25-3.1,7.68-.28,5.41-.19,11.07,0,14.67,7.82.94,11.71,1.87,19.53,2.8" data-svg-origin="156.92607879638672 231.5749969482422"></path>
+					<g class="zht-bodyg" clip-path="url(#zhtClipBig)" >
+						<g class="zht-body undefined">
+							<g class="zht-f">
+								<path class="zht-flt style_defStyle__3MGYX" d="M117.65,193.4c3.41,21,.53,18.26-1.43,22.3a10.15,10.15,0,0,0-1.09,3.57" ></path>
+								<path class="zht-flb style_defStyle__3MGYX" d="M115.13,219.27c-.29,3.72,3,4.83,3.08,7.4.29,5.41.2,12.07,0,15.67-7.82.94-11.71,1.87-19.53,2.8"></path>
+								<path class="zht-frt style_defStyle__3MGYX" d="M147.13,195.1c.57,15.88.16,15.56,2.12,19.6a9.51,9.51,0,0,1,1.1,4.29"></path>
+								<path class="zht-frb style_defStyle__3MGYX" d="M150.35,219c-.06,3.56-3,5.25-3.1,7.68-.28,5.41-.19,11.07,0,14.67,7.82.94,11.71,1.87,19.53,2.8" ></path>
 							</g>
 							<g class="zht-bg ">
-								<path class="zht-b style_fillBlack__IIEI6" d="M156.58,98.9,131.44,64.35l-13.37,42.1L82.68,83.08,80.75,118l-39.64-8.18,14.17,32.3L29.53,157.79l30.68,11.34L60,200.92,94.13,181l9.22,33.45,26.75-27.64,25.76,25.11L172.92,178,213,193.34l-5.42-37.66,41.21-8.2-37.75-17.32,18.11-40.08L193,107.42l-5.18-36Z" data-svg-origin="29.530000686645508 64.3499984741211" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
-								<path class="zht-n style_fillWhite__3lGQA" d="M123.08,158.58v4.34H118.6v-4.34Z" data-svg-origin="118.5999984741211 158.5800018310547" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
-								<g class="zht-eo" data-svg-origin="96.83975219726562 139.599609375" style="transform-origin: 0px 0px 0px; opacity: 1;" transform="matrix(1,0,0,1,0,0)">
+								<path class="zht-b style_fillBlack__IIEI6" d="M156.58,98.9,131.44,64.35l-13.37,42.1L82.68,83.08,80.75,118l-39.64-8.18,14.17,32.3L29.53,157.79l30.68,11.34L60,200.92,94.13,181l9.22,33.45,26.75-27.64,25.76,25.11L172.92,178,213,193.34l-5.42-37.66,41.21-8.2-37.75-17.32,18.11-40.08L193,107.42l-5.18-36Z"></path>
+								<path class="zht-n style_fillWhite__3lGQA" d="M123.08,158.58v4.34H118.6v-4.34Z" ></path>
+								<g class="zht-eo">
 									<path class="style_fillWhite__3lGQA" d="M109.53,140.6a7.37,7.37,0,0,1,3,2.91,9.69,9.69,0,0,1,0,8.93,7.5,7.5,0,0,1-3,2.91,9.55,9.55,0,0,1-8.59,0,7.41,7.41,0,0,1-3-2.91,9.61,9.61,0,0,1,0-8.93,7.28,7.28,0,0,1,3-2.91,9.72,9.72,0,0,1,8.59,0Zm-7.24,3.83a5.83,5.83,0,0,0,0,7.11,4.15,4.15,0,0,0,5.9,0,5.83,5.83,0,0,0,0-7.11,4.15,4.15,0,0,0-5.9,0Z"></path>
 									<path class="style_fillWhite__3lGQA" d="M140.77,140.6a7.35,7.35,0,0,1,3,2.91,9.61,9.61,0,0,1,0,8.93,7.47,7.47,0,0,1-3,2.91,9.55,9.55,0,0,1-8.59,0,7.5,7.5,0,0,1-3-2.91,9.69,9.69,0,0,1,0-8.93,7.37,7.37,0,0,1,3-2.91,9.72,9.72,0,0,1,8.59,0Zm-7.25,3.83a5.83,5.83,0,0,0,0,7.11,4.15,4.15,0,0,0,5.9,0,5.83,5.83,0,0,0,0-7.11,4.15,4.15,0,0,0-5.9,0Z"></path>
 								</g>
-								<g class="zht-ex style_zht-ex__2bXZg" style="opacity: 0;">
+								<g class="zht-ex style_zht-ex__2bXZg">
 									<path class="style_fillWhite__3lGQA" d="M99.76,151.23H95.63l7.08-15.73h4l7,15.73h-4.13l-4.9-10.92Z"></path>
 									<path class="style_fillWhite__3lGQA" d="M132.06,151.23h-4.14L135,135.5h4l7.05,15.73h-4.13L137,140.31Z"></path>
 								</g>
 								<g class="zht-h">
-									<path class="zht-hr style_defStyle__3MGYX" d="M205.91 160.16 C208.91 160.16 230.85 174.17 213.09 183.57 213.26 185.58 213.43 187.6 213.6 189.62 " data-original="M205.91,160.17c3,0,24.94,14,7.18,23.4l.51,6.05" data-svg-origin="205.91000366210938 160.1699981689453" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
-									<path class="zht-hl style_defStyle__3MGYX" d="M47.92 159 C47.92 159 39.22 185.42 58.92 185.05 58.79 187.44 58.66 189.83 58.54 192.23 " data-original="M47.92,159s-8.69,26.42,11,26.05l-.38,7.18" data-svg-origin="46.00981903076172 159" style="transform-origin: 0px 0px 0px;" transform="matrix(1,0,0,1,0,0)"></path>
+									<path class="zht-hr style_defStyle__3MGYX" d="M205.91 160.16 C208.91 160.16 230.85 174.17 213.09 183.57 213.26 185.58 213.43 187.6 213.6 189.62" ></path>
+									<path class="zht-hl style_defStyle__3MGYX" d="M47.92 159 C47.92 159 39.22 185.42 58.92 185.05 58.79 187.44 58.66 189.83 58.54 192.23" ></path>
 								</g>
 							</g>
 						</g>
@@ -196,7 +196,7 @@ mettre des em partout
 				<div class=" flex-jc-center flex-al-center ">
 					<svg width="180" height="170" class="circle-svg style_circle_svg__qbuOu" viewBox="0 0 310 310" xmlns="http://www.w3.org/2000/svg">
 						<defs>
-							<path class="circle style_circle__A0kNw" d="M2.1,196.1c19.5,48.1,80.4,97.3,153.8,97.3c74.1,0,135.1-46.1,154.2-98.3" id="circlePath" style="fill: skyblue"></path>
+							<path class="circle style_circle__A0kNw" d="M2.1,196.1c19.5,48.1,80.4,97.3,153.8,97.3c74.1,0,135.1-46.1,154.2-98.3" id="circlePath"></path>
 						</defs>
 						<text>
 							<textPath class="font-anonymous font-bold style_circle_text__xMKMo" id="masterTextPath" xlink:href="#circlePath">
@@ -222,7 +222,7 @@ mettre des em partout
 		<div class=" little-margin-bottom ">
 			<p class=" basic-line-height big-text-base light-text ">
 				<!--La balise em a-t-elle bien était utilisé-->
-				TOUT. Sans plaisanter, J’ai été formé dans plusieurs écoles afin de devenir développeur
+				TOUT. Sans plaisanter, j’ai été formé dans plusieurs écoles afin de devenir développeur
 				<span lang="en" title="à la fois back-end et front end">full-stack</span>, Notamment la célèbre
 				<abbr title="Haute école de la province de liège">HEPL</abbr> Seraing qui forment des personnes pour
 				créer
@@ -241,48 +241,48 @@ mettre des em partout
 			</p>
 		</div>
 		
-		<svg class="charsBalance svg-2 big-margin-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 637.84 706.16" style="transform-origin: 50% 100% 0px; transform: translate3d(0px, 0px, 0px) rotate(0deg);">
+		<svg class="charsBalance svg-2 big-margin-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 637.84 706.16" >
 			<g class="char1">
-				<g class="char1-bf" style="transform-origin: 0px 0px 0px;" data-svg-origin="317.99999985609657 607.0000005596531" transform="matrix(0.99976,-0.02184,0.02184,0.99976,-13.18056,7.0908)">
-					<path class="char1-b style_fillBlack__AI5c4" d="M379.48,666.06H234.06c0-101.61,65.11-184,145.42-184h0Z" style="transform-origin: 0px 0px 0px;" data-svg-origin="306.77000427246094 666.0599975585938" transform="matrix(0.99994,0.01066,-0.01066,0.99994,7.11861,-3.2302)"></path>
+				<g class="char1-bf">
+					<path class="char1-b style_fillBlack__AI5c4" d="M379.48,666.06H234.06c0-101.61,65.11-184,145.42-184h0Z"></path>
 					<path class="l-eyes svg-fill-white char1-el style_fillWhite__XWP_d" d="M289.59,565h5.28l6.57,6.75-6.57,6.72h-5.28l6.54-6.72Z"></path>
 					<path class="r-eyes svg-fill-white char1-er style_fillWhite__XWP_d" d="M333,578.47l-6.54-6.72L333,565h5.31l-6.57,6.75,6.57,6.72Z"></path>
-					<path class="arm svg-stroke-black char1-h style_styleStroke__OTpmW" d="M435.8,623.1c-20.1-6.5-41.8-8.9-63.8-6.7H250.9c-22-2.2-43.7,0.2-63.8,6.7" style="transform-origin: 0px 0px 0px;" data-svg-origin="311.44998931884766 619.3519287109375" transform="matrix(0.99354,-0.11344,0.11344,0.99354,-68.24732,39.3319)"></path>
+					<path class="arm svg-stroke-black char1-h style_styleStroke__OTpmW" d="M435.8,623.1c-20.1-6.5-41.8-8.9-63.8-6.7H250.9c-22-2.2-43.7,0.2-63.8,6.7" ></path>
 					<path class="svg-fill-white char1-m style_fillWhite__XWP_d" d="M308.21,586.25,313.88,603l5.7-16.77h4.53l-7.5,21.18h-5.43l-7.5-21.18Z"></path>
 				</g>
 				<path class="legs svg-stroke-black char1-fl style_styleStroke__OTpmW" d="M330,659.79c.75,5.94,2.53,22.13,3.76,32.37a13,13,0,0,0,9.66,11l5.68,1.47"></path>
 				<path class="legs svg-stroke-black char1-fr style_styleStroke__OTpmW" d="M305.39,656.56c.19,6,1,22.25,1.4,32.56A13,13,0,0,1,299,701.54l-5.39,2.34"></path>
 			</g>
-			<g class="char2" style="transform-origin: 0px 0px 0px;" data-svg-origin="311.6443786621094 496.1158447265625" transform="matrix(0.99977,0.02135,-0.02135,0.99977,10.66937,-6.55917)">
-				<g class="char2-bf" style="transform-origin: 0px 0px 0px;" data-svg-origin="336.0000035924692 493.9999806571891" transform="matrix(0.99987,-0.01622,0.01622,0.99987,-7.96901,5.51415)">
+			<g class="char2" >
+				<g class="char2-bf" >
 					<circle class="char2-b style_fillBlack__AI5c4" cx="317.54" cy="402.44" r="66.64"></circle>
 					<path class="eyes svg-fill-white char2-el style_fillWhite__XWP_d" d="M285.55,398.42l-3.21-8-5.61,6.22-4.73-1,8.72-9.26-4.61-11.52,4.91,1,3.15,7.88,5.51-6.09,4.73,1-8.64,9.09,4.68,11.72Z"></path>
 					<path class=" eyes svg-fill-white char2-er style_fillWhite__XWP_d" d="M315.46,404.6l-3.21-8-5.61,6.22-4.73-1,8.71-9.25L306,381l4.91,1,3.15,7.88,5.51-6.09,4.73,1-8.64,9.08,4.68,11.72Z"></path>
-					<path class="legs svg-stroke-black char2-fl  style_styleStroke__OTpmW" d="M275.53,447.72c-3.67,4.73-13.43,17.78-19.7,26a13,13,0,0,1-13.93,4.59l-5.64-1.63" style="transform-origin: 0px 0px 0px;" data-svg-origin="274.9998551959745 447.00007831671275" transform="matrix(0.9996,0.02811,-0.02811,0.9996,12.67533,-7.55151)"></path>
+					<path class="legs svg-stroke-black char2-fl  style_styleStroke__OTpmW" d="M275.53,447.72c-3.67,4.73-13.43,17.78-19.7,26a13,13,0,0,1-13.93,4.59l-5.64-1.63"></path>
 				</g>
-				<path class="legs svg-stroke-black char2-fr style_styleStroke__OTpmW" d="M324.8,450.87c.54,6,1.72,22.21,2.58,32.49a13,13,0,0,0,9.25,11.37l5.63,1.67" style="transform-origin: 0px 0px 0px;" data-svg-origin="336.0000173910016 494.0000109188794" transform="matrix(0.99984,-0.01805,0.01805,0.99984,-8.86295,6.14384)"></path>
+				<path class="legs svg-stroke-black char2-fr style_styleStroke__OTpmW" d="M324.8,450.87c.54,6,1.72,22.21,2.58,32.49a13,13,0,0,0,9.25,11.37l5.63,1.67"></path>
 			</g>
-			<g class="char3" style="transform-origin: 0px 0px 0px;" data-svg-origin="359.6578369140625 347.6640930175781" transform="matrix(0.99985,0.01755,-0.01755,0.99985,6.15141,-6.17181)">
-				<g class="char3-bf" style="transform-origin: 0px 0px 0px;" data-svg-origin="311.0000042096121 400.00000548983223" transform="matrix(0.99997,0.00742,-0.00742,0.99997,2.97733,-2.29562)">
+			<g class="char3" >
+				<g class="char3-bf">
 					<path class="char3-b style_fillBlack__AI5c4" d="M236.42,176.48l42.7,132a1.87,1.87,0,0,0,1.62,1.26l125.7,11a1.88,1.88,0,0,0,1.82-1l64.92-122.62S236,175.28,236.42,176.48Z"></path>
-					<path class="char3-fr svg-stroke-black style_styleStroke__OTpmW" d="M365.54,297.27c.54,6,1.72,22.21,2.58,32.49a13,13,0,0,0,9.25,11.38l5.63,1.67" style="transform-origin: 0px 0px 0px;" data-svg-origin="366.9999726137763 317.0000594328564" transform="matrix(0.99453,0.10443,-0.10443,0.99453,35.11184,-36.59187)"></path>
+					<path class="char3-fr svg-stroke-black style_styleStroke__OTpmW" d="M365.54,297.27c.54,6,1.72,22.21,2.58,32.49a13,13,0,0,0,9.25,11.38l5.63,1.67"></path>
 					<path class="char3-m svg-fill-white style_fillWhite__XWP_d" d="M321.41,251.51A16.42,16.42,0,0,1,323,252.6a13.14,13.14,0,0,0,1.2.86,2.53,2.53,0,0,0,.94.37c1,.16,1.73-.42,2.16-1.72l3.17.5a8,8,0,0,1-2.5,4,4.62,4.62,0,0,1-3.66.87,4.43,4.43,0,0,1-1.56-.53,17,17,0,0,1-1.58-1.12c-.47-.38-.85-.66-1.15-.86a2.77,2.77,0,0,0-1-.37c-1-.16-1.74.41-2.19,1.72l-3.14-.5a8,8,0,0,1,2.53-4,4.53,4.53,0,0,1,3.63-.88A4.4,4.4,0,0,1,321.41,251.51Z"></path>
 					<path class="char3-el svg-fill-white style_fillWhite__XWP_d" d="M313.08,229.64a8.28,8.28,0,0,1,3.39,3.65,10,10,0,0,1,.8,5.29,8.63,8.63,0,0,1-1.18,3.71,6.89,6.89,0,0,1-2.45,2.49,5.11,5.11,0,0,1-3.06.71,3.76,3.76,0,0,1-2.21-.86,2.72,2.72,0,0,1-.81-2.12,5.42,5.42,0,0,1-1.95,1.82,4.66,4.66,0,0,1-2.62.45,4.32,4.32,0,0,1-2.24-.83,4.19,4.19,0,0,1-1.38-1.88,5.8,5.8,0,0,1-.32-2.64c0-.3.06-.53.09-.68a7,7,0,0,1,1.32-3.14,6.36,6.36,0,0,1,2.55-2,6.58,6.58,0,0,1,3.28-.5,5.24,5.24,0,0,1,3.52,1.56,4.27,4.27,0,0,1,1,3.44,6.3,6.3,0,0,1-.14.91l-.55,2.23c0,.25-.08.41-.09.5a1.2,1.2,0,0,0,.18.88,1.14,1.14,0,0,0,.79.32,2,2,0,0,0,1.42-.42,3.86,3.86,0,0,0,1.18-1.54,7.27,7.27,0,0,0,.64-2.56,7.59,7.59,0,0,0-.58-3.94,6.35,6.35,0,0,0-2.53-2.82,9.92,9.92,0,0,0-4.38-1.32,10.42,10.42,0,0,0-5.44.78,8.48,8.48,0,0,0-3.7,3.17,10.71,10.71,0,0,0-1.62,4.85,7.72,7.72,0,0,0,1.7,6.1q2.05,2.28,6.36,2.69l-.76,2.35a14,14,0,0,1-5.93-1.84,8.59,8.59,0,0,1-3.45-3.89,11.28,11.28,0,0,1-.78-5.68,11.52,11.52,0,0,1,7.46-10,14.71,14.71,0,0,1,6.82-.89A13.46,13.46,0,0,1,313.08,229.64Zm-5.69,6.83a2.63,2.63,0,0,0-1.84-.88,3,3,0,0,0-1.66.32,3.29,3.29,0,0,0-1.31,1.26,4.85,4.85,0,0,0-.64,2.09,2.84,2.84,0,0,0,.53,2.14,2.47,2.47,0,0,0,1.76.9,3,3,0,0,0,1.65-.32,3.41,3.41,0,0,0,1.35-1.27,4.6,4.6,0,0,0,.68-2.16A2.71,2.71,0,0,0,307.39,236.47Z"></path>
 					<path class="char3-er svg-fill-white style_fillWhite__XWP_d" d="M351.53,233.22a8.33,8.33,0,0,1,3.39,3.65,10.12,10.12,0,0,1,.81,5.3,8.81,8.81,0,0,1-1.18,3.71,7,7,0,0,1-2.46,2.49,5,5,0,0,1-3.06.7,3.64,3.64,0,0,1-2.21-.86,2.65,2.65,0,0,1-.8-2.12,5.44,5.44,0,0,1-2,1.82,4.56,4.56,0,0,1-2.62.46,4.25,4.25,0,0,1-2.23-.83,4.19,4.19,0,0,1-1.39-1.88,5.8,5.8,0,0,1-.31-2.64c0-.31.05-.54.08-.69a7,7,0,0,1,1.32-3.13,6.36,6.36,0,0,1,2.55-2,6.48,6.48,0,0,1,3.28-.51,5.28,5.28,0,0,1,3.52,1.56,4.29,4.29,0,0,1,1,3.44,8,8,0,0,1-.15.92l-.55,2.23c-.05.24-.08.41-.09.49a1.21,1.21,0,0,0,.19.89,1.11,1.11,0,0,0,.78.32,2,2,0,0,0,1.42-.43,3.92,3.92,0,0,0,1.19-1.53,8.47,8.47,0,0,0,.05-6.5,6.3,6.3,0,0,0-2.53-2.82,10.06,10.06,0,0,0-4.38-1.33,10.64,10.64,0,0,0-5.44.78,8.5,8.5,0,0,0-3.7,3.18,10.7,10.7,0,0,0-1.61,4.85,7.63,7.63,0,0,0,1.7,6.09q2.06,2.3,6.36,2.7l-.77,2.35a13.87,13.87,0,0,1-5.92-1.84,8.62,8.62,0,0,1-3.46-3.9,11.24,11.24,0,0,1-.78-5.67,11.54,11.54,0,0,1,7.47-10,14.8,14.8,0,0,1,6.82-.88A13.46,13.46,0,0,1,351.53,233.22Zm-5.69,6.83a2.58,2.58,0,0,0-1.84-.87,2.9,2.9,0,0,0-1.66.32,3.2,3.2,0,0,0-1.31,1.25,4.94,4.94,0,0,0-.64,2.1,2.81,2.81,0,0,0,.53,2.13,2.46,2.46,0,0,0,1.76.91,3.13,3.13,0,0,0,1.66-.32,3.47,3.47,0,0,0,1.35-1.27,4.79,4.79,0,0,0,.67-2.16A2.71,2.71,0,0,0,345.84,240.05Z"></path>
 				</g>
-				<path class=" svg-stroke-black char3-fl style_styleStroke__OTpmW" d="M323.6,295.5c-0.5,6-5.2,42.5-6.2,52" style="transform-origin: 0px 0px 0px;" data-svg-origin="310.99999419609736 400.00000553058766" transform="matrix(0.99997,0.00769,-0.00769,0.99997,3.08534,-2.37959)"></path>
+				<path class=" svg-stroke-black char3-fl style_styleStroke__OTpmW" d="M323.6,295.5c-0.5,6-5.2,42.5-6.2,52"></path>
 			</g>
-			<g class="char4" style="transform-origin: 0px 0px 0px;" data-svg-origin="329.87950897216797 191.67267513275146" transform="matrix(0.99987,0.01614,-0.01614,0.99987,3.1393,-5.39782)">
-				<g class="char4-bf" style="transform-origin: 0px 0px 0px;" data-svg-origin="308.000008371386 131.00000357107592" transform="matrix(0.99997,-0.00799,0.00799,0.99997,-1.03745,2.46485)">
+			<g class="char4" >
+				<g class="char4-bf">
 					<path class="char4-b style_fillBlack__AI5c4" d="M344.93,33.34,317.1,0,306.39,43.59,268.93,22.3l.41,35.48-40.76-5.6L245.14,84l-25,17.69L252,111.08l1.93,32.24,33.26-22.51,11.62,33.29L324,124.26,351.85,148l15-35.52,41.69,12.82-8-37.82,41.23-11.11-39.45-15,15.64-41.87-35.51,20L374.72,3.31Z"></path>
 					<path class="char4-el svg-fill-white style_fillWhite__XWP_d" d="M304,73.72a7.49,7.49,0,0,1,3.05,3,9.82,9.82,0,0,1,0,9.07,7.62,7.62,0,0,1-3.05,3,9.76,9.76,0,0,1-8.73,0,7.59,7.59,0,0,1-3-3,9.82,9.82,0,0,1,0-9.07,7.47,7.47,0,0,1,3-3,9.85,9.85,0,0,1,8.73,0Zm-7.36,3.89a5.93,5.93,0,0,0,0,7.23,4.25,4.25,0,0,0,6,0,5.93,5.93,0,0,0,0-7.23,4.22,4.22,0,0,0-6,0Z"></path>
 					<path class="char4-er svg-fill-white style_fillWhite__XWP_d" d="M335.7,73.72a7.49,7.49,0,0,1,3.05,3,9.82,9.82,0,0,1,0,9.07,7.62,7.62,0,0,1-3.05,3,9.76,9.76,0,0,1-8.73,0,7.59,7.59,0,0,1-3-3,9.82,9.82,0,0,1,0-9.07,7.47,7.47,0,0,1,3-3,9.85,9.85,0,0,1,8.73,0Zm-7.36,3.89a5.93,5.93,0,0,0,0,7.23,4.25,4.25,0,0,0,6,0,5.93,5.93,0,0,0,0-7.23,4.22,4.22,0,0,0-6,0Z"></path>
 					<path class="char4-m svg-fill-white style_fillWhite__XWP_d" d="M318.4,100.2l-0.1,4.4l-4.5-0.2l0.1-4.4L318.4,100.2z"></path>
-					<path class="char4-hl svg-stroke-black style_styleStroke__OTpmW" d="M250.74,57.53c-2-1.29-17.67-17.76,2.52-38l-8.65-7.34" style="transform-origin: 0px 0px 0px;" data-svg-origin="249.99997246404354 57.00008286011671" transform="matrix(0.99615,0.08762,-0.08762,0.99615,5.95688,-21.68563)"></path>
-					<path class="char4-hr svg-stroke-black style_styleStroke__OTpmW" d="M406.25,67.66c6.53,5.23,39.48-10.13,31.81-39.83l7.67-2.67" style="transform-origin: 0px 0px 0px;" data-svg-origin="405.9999984084921 66.99998039352745" transform="matrix(0.99067,-0.13631,0.13631,0.99067,-5.34478,55.96699)"></path>
-					<path class="char4-fl svg-stroke-black style_styleStroke__OTpmW" d="M308.5,131.8c3.4,21,0.5,18.2-1.4,22.3c-3.3,6.8,1.8,7.7,2,11c0.3,5.4,0.2,23.1,0,26.7" style="transform-origin: 0px 0px 0px;" data-svg-origin="308.0000041776578 131.000001674774" transform="matrix(0.99998,-0.00705,0.00705,0.99998,-0.91739,2.17402)"></path>
+					<path class="char4-hl svg-stroke-black style_styleStroke__OTpmW" d="M250.74,57.53c-2-1.29-17.67-17.76,2.52-38l-8.65-7.34"></path>
+					<path class="char4-hr svg-stroke-black style_styleStroke__OTpmW" d="M406.25,67.66c6.53,5.23,39.48-10.13,31.81-39.83l7.67-2.67"></path>
+					<path class="char4-fl svg-stroke-black style_styleStroke__OTpmW" d="M308.5,131.8c3.4,21,0.5,18.2-1.4,22.3c-3.3,6.8,1.8,7.7,2,11c0.3,5.4,0.2,23.1,0,26.7"></path>
 				</g>
-				<path class="char4-fr svg-stroke-black style_styleStroke__OTpmW" d="M340.62,134.81c5.38,14.95,4.89,14.77,8,18,5.21,5.47.92,8.86,1.75,12,1.38,5.24,3.19,10.6,4.46,14,7.73-1.5,11.72-1.8,19.45-3.3" style="transform-origin: 0px 0px 0px;" data-svg-origin="340.00001086363125 134.00000583532318" transform="matrix(0.9974,-0.07204,0.07204,0.9974,-8.76937,24.842)"></path>
+				<path class="char4-fr svg-stroke-black style_styleStroke__OTpmW" d="M340.62,134.81c5.38,14.95,4.89,14.77,8,18,5.21,5.47.92,8.86,1.75,12,1.38,5.24,3.19,10.6,4.46,14,7.73-1.5,11.72-1.8,19.45-3.3"></path>
 			</g>
 			<line class=" svg-stroke-black style_styleStroke__OTpmW" x1="1.5" y1="703.88" x2="636.34" y2="703.88"></line>
 		</svg>
@@ -425,14 +425,13 @@ mettre des em partout
 	
 	<div class="flex flex-jc-center flex-al-center ">
 		<svg class="arrow-svg" preserveAspectRatio="none" viewBox="0 -10 290 120">
-			<path d="M270.7,34.8v48.6c-19.1-23.7-42.5-43.6-69-58.6C174,9.4,144.7,1,114.7,0.2C77.3-1.1,38.6,9.4,0,31l4.6,8.2  C71.8,1.4,136.5-0.7,196.7,32.8c34.2,19,57.2,44.8,66.6,56.4h-47.6v9.3H280V34.8H270.7z" style="transform-origin: 0px 0px 0px;" data-svg-origin="140 9.933220623433591"></path>
+			<path d="M270.7,34.8v48.6c-19.1-23.7-42.5-43.6-69-58.6C174,9.4,144.7,1,114.7,0.2C77.3-1.1,38.6,9.4,0,31l4.6,8.2  C71.8,1.4,136.5-0.7,196.7,32.8c34.2,19,57.2,44.8,66.6,56.4h-47.6v9.3H280V34.8H270.7z"></path>
 			<path stroke="none" fill="none" d="M186.5,22.9c-7.8-4.3-17.6-8.5-28.8-11.7c-15.7-4.5-29.7-6-40.8-6.4"></path>
 		</svg>
 	</div>
 	
 	<div class=" [ basic-margin huge-margin-top flex-jc-center huge-margin-bottom ] ">
-		<a class=" [ big-text-title underline  ] " href="#" title="aller sur le linkdin de Blanchar senga-vita"> Voir
-			plus ici</a>
+		<a class="bigger big-link-2 [ big-text-title underline  ] " href="#" title="aller sur le linkdin de Blanchar senga-vita">  <span class="no-js-link-text"> Voir plus ici </span> </a>
 	</div>
 	
 	
@@ -448,28 +447,32 @@ mettre des em partout
 			<li>
 				<section class="trophee__item-2">
 					<div class="trophee__text" itemprop="award">
-						<h3 class="little-margin" >Awwwwards
+						<h3 class="little-margin">Awwwwards
 							<time datetime="2023">2023</time>
 						</h3>
 						<p class=" mono-text basic-line-height little-big-text-base ">Mention honorable</p>
-						<p class=" italic-text little-big-text-base " > Blancharsengavita.com </p>
+						<p class=" italic-text little-big-text-base "> Blancharsengavita.com </p>
 					</div>
 					<div class="trophee__svg__container">
-						<svg class="trophee__svg trapeze" preserveAspectRatio="none" viewBox="0 0 798.266 560.37"><path d="M746.186,472.305,569.506,11.085a6.122,6.122,0,0,0-5.488-4.075L167.846,0a5.632,5.632,0,0,0-5.365,3.883L0, 459.1S747.793,476.5,746.186,472.305Z" transform="translate(740.627 560.37) rotate(-173)"></path></svg>
+						<svg class="trophee__svg svg__trapeze" preserveAspectRatio="none" viewBox="0 0 798.266 560.37">
+							<path d="M746.186,472.305,569.506,11.085a6.122,6.122,0,0,0-5.488-4.075L167.846,0a5.632,5.632,0,0,0-5.365,3.883L0, 459.1S747.793,476.5,746.186,472.305Z"></path>
+						</svg>
 					</div>
 				</section>
 			</li>
 			<li>
 				<section class="trophee__item">
 					<div class="trophee__text" itemprop="award">
-						<h3 class="little-margin" >World Skills
+						<h3 class="little-margin">World Skills
 							<time datetime="2023">2023</time>
 						</h3>
 						<p class=" mono-text basic-line-height little-big-text-base ">Vainqueur</p>
-						<p class=" italic-text little-big-text-base " > Blanchar Senga-Vita </p>
+						<p class=" italic-text little-big-text-base "> Blanchar Senga-Vita </p>
 					</div>
 					<div class="trophee__svg__container">
-						<svg class="trophee__svg" preserveAspectRatio="none" viewBox="0 0 905 905"><circle cx="452.5" cy="452.5" r="452.5"></circle></svg>
+						<svg class="trophee__svg svg__cercle" preserveAspectRatio="none" viewBox="0 0 905 905">
+							<circle cx="452.5" cy="452.5" r="452.5"></circle>
+						</svg>
 					</div>
 				</section>
 			</li>
@@ -477,59 +480,72 @@ mettre des em partout
 				
 				<section class="trophee__item-2">
 					<div class="trophee__text" itemprop="award">
-						<h3 class="little-margin" ><abbr title="Cascading Style Sheet">CSS</abbr> Design Awards
+						<h3 class="little-margin"><abbr title="Cascading Style Sheet">CSS</abbr> Design Awards
 							<time datetime="2023">2024</time>
 						</h3>
 						<p class=" mono-text basic-line-height little-big-text-base ">Mention honorable</p>
-						<p class=" italic-text little-big-text-base " > Blancharsengavita.com </p>
+						<p class=" italic-text little-big-text-base "> Blancharsengavita.com </p>
 					</div>
 					<div class="trophee__svg__container">
-						<svg class="trophee__svg" preserveAspectRatio="none" viewBox="0 0 678.73 575.862"><path id="Path_10507" data-name="Path 10507" d="M0,0H478.085C478.085,334.067,264.031,604.9,0,604.9H0Z" transform="matrix(0.174, 0.985, -0.985, 0.174, 595.711, -9.61)"></path></svg>
+						<svg class="trophee__svg svg__pizza" preserveAspectRatio="none" viewBox="0 0 678.73 575.862">
+							<path id="Path_10507" data-name="Path 10507" d="M0,0H478.085C478.085,334.067,264.031,604.9,0,604.9H0Z" ></path>
+						</svg>
 					</div>
 				</section>
 			</li>
 			<li>
 				<section class="trophee__item">
 					<div class="trophee__text" itemprop="award">
-						<h3 class="little-margin" ><abbr title="International Collegiate Programming Contest">ICPC</abbr>
+						<h3 class="little-margin"><abbr title="International Collegiate Programming Contest">ICPC</abbr>
 							<time datetime="2023">2023</time>
 						</h3>
 						<p class=" mono-text basic-line-height little-big-text-base ">Demi-Finaliste</p>
-						<p class=" italic-text little-big-text-base " > Blanchar Senga-Vita </p>
+						<p class=" italic-text little-big-text-base "> Blanchar Senga-Vita </p>
 					</div>
 					<div class="trophee__svg__container">
-						<svg class="trophee__svg svg__trapeze" preserveAspectRatio="none" viewBox="0 0 921.553 728.663"><path d="M342.5,172.591,423.523,0l78.089,181.671L630.273,52.984,658.159,209.4l154.58-62.74-38.3,155.253,112.573,54.363L770.29,427.517l19.257,143.6-148.66-67.893L623.142,660.451,499.679,552.887,410.7,683.177,322.568,540.97,170.323,636.348V462.525L0,452.236l141.67-102.85L45.757,179.893l155.395,54.877V68.414Z"></path></svg>
+						<svg class="trophee__svg svg__pico" preserveAspectRatio="none" viewBox="0 0 921.553 728.663">
+							<path d="M342.5,172.591,423.523,0l78.089,181.671L630.273,52.984,658.159,209.4l154.58-62.74-38.3,155.253,112.573,54.363L770.29,427.517l19.257,143.6-148.66-67.893L623.142,660.451,499.679,552.887,410.7,683.177,322.568,540.97,170.323,636.348V462.525L0,452.236l141.67-102.85L45.757,179.893l155.395,54.877V68.414Z"></path>
+						</svg>
 					</div>
 				</section>
 			</li>
-			
+		
 		
 		</ul>
 		
 		
-		
 		<div class="flex flex-jc-center flex-al-center white-text">
 			<svg class="reversed-arrow-svg" preserveAspectRatio="none" viewBox="0 -10 290 120">
-				<path d="M270.7,34.8v48.6c-19.1-23.7-42.5-43.6-69-58.6C174,9.4,144.7,1,114.7,0.2C77.3-1.1,38.6,9.4,0,31l4.6,8.2  C71.8,1.4,136.5-0.7,196.7,32.8c34.2,19,57.2,44.8,66.6,56.4h-47.6v9.3H280V34.8H270.7z" style="transform-origin: 0px 0px 0px;" data-svg-origin="140 9.933220623433591"></path>
-				<path strokefill="none" fill="white" d="M186.5,22.9c-7.8-4.3-17.6-8.5-28.8-11.7c-15.7-4.5-29.7-6-40.8-6.4"></path>
+				<path d="M270.7,34.8v48.6c-19.1-23.7-42.5-43.6-69-58.6C174,9.4,144.7,1,114.7,0.2C77.3-1.1,38.6,9.4,0,31l4.6,8.2  C71.8,1.4,136.5-0.7,196.7,32.8c34.2,19,57.2,44.8,66.6,56.4h-47.6v9.3H280V34.8H270.7z"></path>
+				<path d="M186.5,22.9c-7.8-4.3-17.6-8.5-28.8-11.7c-15.7-4.5-29.7-6-40.8-6.4"></path>
 			</svg>
 		</div>
 		
 		<div class=" [ basic-margin huge-margin-top flex-jc-center huge-margin-bottom ] white-text ">
 			<a class=" [ big-text-title underline text-align-center ]" href="#" title="aller sur le linkdin de Blanchar senga-vita">
-				encore plus </a>
+				<span class="bigger big-link-2"> encore plus </span> </a>
 		</div>
 	</section>
 	
 	<div class=" call__to__action-container [ big-margin-top basic-margin big-margin-bottom flex-direction-column flex-al-center ] ">
 		<div class="flex flex-jc-center flex-al-center white-text">
 			<svg class="reversed-arrow-svg-black" preserveAspectRatio="none" viewBox="0 -10 290 120">
-				<path d="M270.7,34.8v48.6c-19.1-23.7-42.5-43.6-69-58.6C174,9.4,144.7,1,114.7,0.2C77.3-1.1,38.6,9.4,0,31l4.6,8.2  C71.8,1.4,136.5-0.7,196.7,32.8c34.2,19,57.2,44.8,66.6,56.4h-47.6v9.3H280V34.8H270.7z" style="transform-origin: 0px 0px 0px;" data-svg-origin="140 9.933220623433591"></path>
-				<path d="M186.5,22.9c-7.8-4.3-17.6-8.5-28.8-11.7c-15.7-4.5-29.7-6-40.8-6.4"></path>
+				<path d="M270.7,34.8v48.6c-19.1-23.7-42.5-43.6-69-58.6C174,9.4,144.7,1,114.7,0.2C77.3-1.1,38.6,9.4,0,31l4.6,8.2  C71.8,1.4,136.5-0.7,196.7,32.8c34.2,19,57.2,44.8,66.6,56.4h-47.6v9.3H280V34.8H270.7z" ></path>
 			</svg>
 		</div>
-		<a class=" [ big-text-title semi-bold-text underline ]" href="https://conceptstudio.com/en/contact-form/"
-		   hreflang="en" title="Aller sur ma page contact pour proposer un service (en)󠁿">Travaillons ensemble
+		<a class=" underline__svg__container [ big-text-title semi-bold-text ]" href="https://conceptstudio.com/en/contact-form/"
+		   hreflang="en" title="Aller sur ma page contact pour proposer un service (en)󠁿">Travaillons
+			<div class="underline__svg__container" >
+				<svg class="underline__call-to-action" viewBox="0 0 100 1" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0" y1="0" x2="100" y2="0" />
+				</svg>
+			</div>
+			ensemble
+			<div class="underline__svg__container" >
+				<svg class="underline__call-to-action" viewBox="0 0 100 1"  xmlns="http://www.w3.org/2000/svg">
+					<line x1="0" y1="0" x2="100" y2="0"  />
+				</svg>
+			</div>
 		</a>
 		<div class="flex-row align-self-end">
 			<div class="or-svg-container">
@@ -544,14 +560,21 @@ mettre des em partout
 			</div>
 			<div>
 				<svg class="reversed-arrow-svg-black-2" viewBox="75 0 100.29 228.41">
-					<path d="M154.11,172.13l-2.94-7.44-19.38,7.64a116.13,116.13,0,0,0,6.83-43.39C136.84,78.63,102,44.73,73,25.16l-3.31-2.24L65.2,29.54l3.31,2.24c39.75,26.87,60.64,59.53,62.11,97.07a108.94,108.94,0,0,1-6.62,41.4L115.54,151l-7.33,3.22,13.6,31,6.21-2.73Z" data-svg-origin="118.5459991455078 120.30000190734863" transform="matrix(0.99078,0.13548,-0.13548,0.99078,33.07881,-8.57234)"></path>
+					<path d="M154.11,172.13l-2.94-7.44-19.38,7.64a116.13,116.13,0,0,0,6.83-43.39C136.84,78.63,102,44.73,73,25.16l-3.31-2.24L65.2,29.54l3.31,2.24c39.75,26.87,60.64,59.53,62.11,97.07a108.94,108.94,0,0,1-6.62,41.4L115.54,151l-7.33,3.22,13.6,31,6.21-2.73Z"></path>
 				</svg>
 			</div>
 		</div>
 		<div>
-			<a class=" [ big-text-title ] " href="https://conceptstudio.com/en/team/"
-			   hreflang="en" title="Aller sur ma page contact pour rejoindre l'équipe (en)󠁿"> laissez moi rejoindre
-				votre équipe </a>
+			<a class=" call-to-action-2 [ big-text-title ] " href="https://conceptstudio.com/en/team/"
+			   hreflang="en" title="Aller sur ma page contact pour rejoindre l'équipe (en)󠁿">
+				<div class="call-to-action-2-svg-container">
+					<span>laissez moi rejoindre votre équipe</span>
+					<svg class=" circled-svg-call-to-action" viewBox="60.2 10 300 150">
+						<path class="" d="M225.7,92c0,0-169,49.6-157.8-9.1S283.1-2.9,293,35.1c9.9,37.9-66.8,76.1-66.8,76.1"></path>
+					</svg>
+				</div>
+				 </a>
+			
 		</div>
 	</div>
 </main>
@@ -596,7 +619,7 @@ mettre des em partout
 		</div>
 	</div>
 	
-	<div class="fill-white flex-wrap little-big-margin-bottom " style="border-color: white">
+	<div class="fill-white flex-wrap little-big-margin-bottom ">
 		<a class=" cool social-link" href="">
 			<div class="oui margin-right">
 				<span>
