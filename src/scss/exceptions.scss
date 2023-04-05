@@ -6,6 +6,7 @@ body {
   background-color: white;
 }
 
+
 .animation {
   height: 17em;
 }
@@ -201,8 +202,6 @@ body {
   stroke-width: 3;
 }
 
-
-
 .circled-svg-menu {
   width: 100px;
   height: 100px;
@@ -226,9 +225,7 @@ body {
   fill: white;
 }
 
-.hero {
-  padding-top: 7rem ;
-}
+
 
 main {
   //margin-top: 6rem;
@@ -236,10 +233,7 @@ main {
   z-index: 2;
 }
 
-main, footer {
-  position: sticky;
-  bottom: 0;
-}
+
 
 body {
   cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
@@ -255,6 +249,10 @@ a {
 
 .style_zht-ex__2bXZg {
   opacity: 0;
+}
+
+.underline__svg__container{
+  font-size: 3rem;
 }
 
 .underline__svg__container {
@@ -307,21 +305,18 @@ a:hover .underline__call-to-action line {
 
 .circled-svg-call-to-action {
   stroke: black;
-  stroke-width: 0.1rem;
-  width: 500px;
-  height: 300px;
+  stroke-width: 0.15rem;
+  width: 350px;
+  height: 210px;
   fill: none;
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
 }
 
 
 .call-to-action-2-svg-container{
   position: relative;
-}
-
-.circled-svg-call-to-action {
-  position: absolute;
-  top: -3rem;
-  left: 6rem;
 }
 
 .circled-svg-call-to-action path {
@@ -349,17 +344,67 @@ a:hover .underline__call-to-action line {
 
 
 @media screen and (min-width: 750px) {
+
   .circled-svg-menu {
     width: 120px;
     height: 120px;
+  }
+
+  .circled-svg-call-to-action {
+    stroke: black;
+    stroke-width: 0.15rem;
+    width: 500px;
+    height: 300px;
+    fill: none;
+    position: absolute;
+    top: -3rem;
+    left: -1em;
+  }
+
+  main, footer {
+    position: sticky;
+    bottom: 0;
+  }
+
+  .underline__svg__container{
+    font-size: 5rem;
+  }
+
+  .hero {
+    padding-top: 7rem ;
   }
 }
 
 
 @media screen and (min-width: 1250px) {
+
+  main, footer {
+    position: sticky;
+    bottom: 0;
+  }
+
+  .circled-svg-call-to-action {
+    stroke: black;
+    stroke-width: 0.1rem;
+    width: 800px;
+    height: 300px;
+    fill: none;
+    position: absolute;
+    top: -3rem;
+    left: -1em;
+  }
+
+  .call-to-action-2 {
+    font-size: 4rem;
+  }
+
   .circled-svg-menu {
     width: 120px;
     height: 140px;
+  }
+
+  .underline__svg__container{
+    font-size: 6rem;
   }
 }
 

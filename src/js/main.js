@@ -16,37 +16,8 @@ const div1750child = document.createElement('div');
 div1750child.classList.add('div1750child');
 div1750child.classList.add('margin-bottom-3rem');
 
-// const
-
-
-let largeurFenetre = false;
-
-// window.addEventListener('load', (event) => {
-//   if (window.innerWidth >= 750){
-//     heroText.insertAdjacentHTML('beforebegin', `<div class="hero__container"></div>`);
-//     const heroContainer = document.querySelector('.hero__container');
-//
-//     heroText.innerHTML = '';
-//
-//     heroContainer.insertAdjacentHTML('afterbegin', `<div class="div1750"></div>`);
-//     heroContainer.insertAdjacentHTML('afterbegin', `<div class="div2750"></div>`);
-//
-//     const div1750 = document.querySelector('.div1750');
-//     const div2750 = document.querySelector('.div2750');
-//
-//     div1750.insertAdjacentElement('beforeend', hero1);
-//     div1750.insertAdjacentElement('beforeend', hero2);
-//     div1750.insertAdjacentElement('beforeend', hero5);
-//     div2750.insertAdjacentElement('beforeend', hero4);
-//     div2750.insertAdjacentElement('beforeend', hero3);
-//
-//     heroContainer.insertAdjacentElement('beforeend', div1750);
-//     heroContainer.insertAdjacentElement('beforeend', div2750);
-//   }
-// });
-
-window.addEventListener('resize', (e)=>{
-  if (window.innerWidth >= 750){
+function ChangeHeroAccordingToWindowWidth (){
+  if (window.innerWidth >= 1250){
     hero.insertAdjacentElement('afterend', heroContainer1);
 
     heroContainer1.insertAdjacentElement('beforeend', div1750);
@@ -62,10 +33,19 @@ window.addEventListener('resize', (e)=>{
 
     heroText.remove();
   }
-  else if (window.innerWidth < 750){
+  else if (window.innerWidth < 1750){
     hero.insertAdjacentElement('afterend', heroText );
     heroText.classList.add('basic-margin');
     heroContainer1.remove();
+  }
+}
+window.addEventListener('resize', (e)=>{
+  ChangeHeroAccordingToWindowWidth ()
+});
+
+window.addEventListener('load', (event) => {
+  if (window.innerWidth >= 750){
+    ChangeHeroAccordingToWindowWidth ()
   }
 });
 //---- Fais apparaitre les éléments de l'intro l'un après l'autre avec un delai reglable ----
