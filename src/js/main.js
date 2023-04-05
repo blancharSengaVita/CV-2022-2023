@@ -16,6 +16,7 @@ const div1750child = document.createElement('div');
 div1750child.classList.add('div1750child');
 div1750child.classList.add('margin-bottom-3rem');
 
+
 function ChangeHeroAccordingToWindowWidth (){
   if (window.innerWidth >= 1250){
     hero.insertAdjacentElement('afterend', heroContainer1);
@@ -48,6 +49,7 @@ window.addEventListener('load', (event) => {
     ChangeHeroAccordingToWindowWidth ()
   }
 });
+
 //---- Fais apparaitre les éléments de l'intro l'un après l'autre avec un delai reglable ----
 
 
