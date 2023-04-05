@@ -4,14 +4,6 @@
 
 body {
   background-color: white;
-
-}
-
-.svg-menu {
-  //width: 7em;
-  fill: none;
-  stroke: black;
-  stroke-width: 3;
 }
 
 .animation {
@@ -21,9 +13,8 @@ body {
 .hero__animation {
   position: absolute;
   overflow: visible;
-  width: 13em;
+  width: 13rem;
 }
-
 
 .zht-hole {
   animation: grow-shrink 7s infinite;
@@ -46,7 +37,6 @@ body {
     rx: 136px; /* second 7 */
   }
 }
-
 
 .zht-hole-b {
   animation: grow-shrink-b 7s infinite;
@@ -162,11 +152,11 @@ body {
 
 .skip-links-container .skip-link {
   position: absolute;
-  top: -3em;
+  top: -3rem;
   left: 0;
   background-color: white;
   color: black;
-  padding: 0.4em;
+  padding: 0.4rem;
   z-index: 1;
   tab-index: 1;
   transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out; /* add transition effect */
@@ -211,6 +201,8 @@ body {
   stroke-width: 3;
 }
 
+
+
 .circled-svg-menu {
   width: 100px;
   height: 100px;
@@ -234,7 +226,12 @@ body {
   fill: white;
 }
 
+.hero {
+  padding-top: 7rem ;
+}
+
 main {
+  //margin-top: 6rem;
   background-color: white;
   z-index: 2;
 }
@@ -245,7 +242,15 @@ main, footer {
 }
 
 body {
-  cursor: crosshair;
+  cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+}
+
+a {
+  cursor: alias ;
+}
+
+.trophees{
+  cursor: cell;
 }
 
 .style_zht-ex__2bXZg {
@@ -341,3 +346,20 @@ a:hover .underline__call-to-action line {
   //transform: translateY(-20px) scale(2) rotate(10deg);
   z-index: 1;
 }
+
+
+@media screen and (min-width: 750px) {
+  .circled-svg-menu {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+@media screen and (min-width: 1250px) {
+  .circled-svg-menu {
+    width: 120px;
+    height: 140px;
+  }
+}
+

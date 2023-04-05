@@ -2,40 +2,40 @@
 
 //font-size
 :root {
-  font-size: 0.875rem;//14 pixels
+  font-size: 0.875rem; //14 pixels
 }
 
-.big-text-title {//49px
+.font-size-h1 { //49px
   font-size: 3.5em;
 }
 
-.text-title{//42pxe
+.font-size-h2 { //42pxe
   font-size: 3em;
 }
 
-.big-text-base{//21px
+.big-text-base { //21px
   font-size: 1.5rem;
 }
 
-.medium-text-base{//18px
+.medium-text-base { //18px
   font-size: 1.25rem;
 }
 
-.little-big-text-base{//16px
+.font-size-p-L { //16px
   font-size: 1.14rem;
 }
 
-.text-base{//14px
+.font-size-p { //14px
   font-size: 1rem;
 }
 
-.small-text-logo{
+.small-text-logo {
   font-size: 0.7rem;
 }
 
 //font-family
 :root {
-  font-family: "Poppins",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
 }
 
 .mono-text {
@@ -48,7 +48,7 @@
 }
 
 //font-weight
-.bold-text{
+.bold-text {
   font-weight: 700;
 }
 
@@ -66,30 +66,30 @@
 
 //line-height
 .basic-line-height {
-line-height : 1.5em;
+  line-height: 1.5em;
 }
 
 .big-line-height {
-  line-height : 3em;
+  line-height: 3em;
 }
 
 
 /*----  COLOR  ----*/
 
-.underline{
-  text-decoration : underline;
+.underline {
+  text-decoration: underline;
 }
 
 ::selection {
   background: #fd0;
 }
 
-.black-text{
+.black-text {
   color: black;
 }
 
-.white-text{
-  color : white;
+.white-text {
+  color: white;
 }
 
 .bg-color-black {
@@ -99,16 +99,16 @@ line-height : 1.5em;
 .bg-color-white {
   background-color: white;
 }
-//https://www.youtube.com/watch?v=WWN-68aQ-Qk
+
 
 
 //position
-.relative{
+.relative {
   position: relative;
 }
 
 //
-.scrolling-down{
+.scrolling-down {
   top: -200px;
 }
 
@@ -117,11 +117,11 @@ line-height : 1.5em;
   visibility: hidden;
 }
 
-.test-1{
+.test-1 {
   visibility: initial;
 }
 
-.medium-line-height{
+.medium-line-height {
   line-height: 2rem;
 }
 
@@ -140,6 +140,168 @@ line-height : 1.5em;
 }
 
 .fill-white {
-fill: white;
+  fill: white;
 }
 
+
+@media screen and (min-width: 750px) {
+  //font-size
+  body {
+    color: skyblue;
+  }
+
+  :root {
+    font-size: 0.875rem; //14 pixels
+  }
+
+  .font-size-h1 { //112px
+    font-size: 8rem;
+  }
+
+  .font-size-h2 { //42pxe
+    font-size: 5rem;
+  }
+
+  .big-text-base { //21px
+    font-size: 1.5rem;
+  }
+
+  .medium-text-base { //18px
+    font-size: 1.25rem;
+  }
+
+  .font-size-p-L { //16px
+    font-size: 1.14rem;
+  }
+
+  .font-size-p { //14px
+    font-size: 1rem;
+  }
+
+  .small-text-logo {
+    font-size: 0.7rem;
+  }
+
+  //font-weight
+  .bold-text {
+    font-weight: 700;
+  }
+
+  .semi-bold-text {
+    font-weight: 600;
+  }
+
+  .medium-text {
+    font-weight: 500;
+  }
+
+  .light-text {
+    font-weight: 400;
+  }
+
+  //line-height
+  .basic-line-height {
+    line-height: 1.5em;
+  }
+
+  .big-line-height {
+    line-height: 3em;
+  }
+
+
+  /*----  COLOR  ----*/
+
+  //https://www.youtube.com/watch?v=WWN-68aQ-Qk
+
+
+  .scrolling-down {
+    top: -200px;
+  }
+
+  .medium-line-height {
+    line-height: 2rem;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1250px) {
+  //font-size
+  body{
+    color: orange;
+  }
+
+  :root {
+    font-size: 1rem; //14 pixels
+  }
+
+  .font-size-h1 { //160px
+    font-size: 8rem;
+  }
+
+  .font-size-h2 { //42pxe
+    font-size: 7rem;
+  }
+
+  .big-text-base { //21px
+    font-size: 1.5rem;
+  }
+
+  .medium-text-base { //18px
+    font-size: 1.25rem;
+  }
+
+  .font-size-p-L { //16px
+    font-size: 1.14rem;
+  }
+
+  .font-size-p { //16px
+    font-size: 1rem;
+  }
+
+  .small-text-logo {
+    font-size: 0.7rem;
+  }
+
+  //font-weight
+  .bold-text {
+    font-weight: 700;
+  }
+
+  .semi-bold-text {
+    font-weight: 600;
+  }
+
+  .medium-text {
+    font-weight: 500;
+  }
+
+  .light-text {
+    font-weight: 400;
+  }
+
+  //line-height
+  .basic-line-height {
+    line-height: 1.5em;
+  }
+
+  .big-line-height {
+    line-height: 3em;
+  }
+
+
+  /*----  COLOR  ----*/
+
+  //https://www.youtube.com/watch?v=WWN-68aQ-Qk
+
+
+  .scrolling-down {
+    top: -200px;
+  }
+
+  .medium-line-height {
+    line-height: 2rem;
+  }
+
+}
