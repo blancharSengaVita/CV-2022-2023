@@ -219,10 +219,9 @@ const linksText2 = document.querySelector('.no-js-link-text-2');
 const letters2 = Array.from(links2.textContent);
 links2.classList.remove( "bigger-no-js");
 
-for (let letter of letters) {
+for (let letter of letters2) {
   links2.insertAdjacentHTML('beforeend', `<span class="grand-2">${letter}</span>`);
 }
-
 
 const grands2 = document.querySelectorAll('.grand-2');
 
