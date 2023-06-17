@@ -158,15 +158,15 @@ body {
   background-color: white;
   color: black;
   padding: 0.4rem;
-  z-index: 1;
+  z-index: 10;
   tab-index: 1;
-  transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out; /* add transition effect */
+  transition: opacity 0.2s ease-in-out, top 0.2s ease-in-out;
   border: black;
 }
 
 .skip-link:focus {
   top: 0;
-  opacity: 1; /* show skip link on focus */
+  opacity: 1;
 }
 
 
