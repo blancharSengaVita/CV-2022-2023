@@ -156,7 +156,6 @@ function makeLiAppear(){
   });
 }
 
-console.log(document.querySelector('footer .oui'));
 window.addEventListener('scroll', makeLiAppear);
 
 
@@ -174,8 +173,7 @@ for (let letter of letters) {
 
 const grands = document.querySelectorAll('.grand');
 
-console.log(document.querySelectorAll('.grand'));
-grandesLettre = Array.from(grands)
+const grandesLettre = Array.from(grands)
 
 links.addEventListener('mouseover', ()=> {
   grandesLettre.forEach((letter, index) => {
@@ -207,7 +205,7 @@ for (let letter of letters2) {
 
 const grands2 = document.querySelectorAll('.grand-2');
 
-grandesLettre2 = Array.from(grands2)
+const grandesLettre2 = Array.from(grands2)
 
 links2.addEventListener('mouseover', ()=> {
   grandesLettre2.forEach((letter2, index) => {
